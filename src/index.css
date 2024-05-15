@@ -1,13 +1,487 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+:root {
+  --blue-color: #00a1d8;
+  --font-size: 16px;
+}
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.d-flex {
+  display: flex;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-4 {
+  margin-top: 40px;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.w-90 {
+  width: 90%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-70 {
+  width: 70%;
+  margin: auto;
+}
+.m-auto {
+  margin: auto;
+}
+.avighna-nav-logo {
+  width: 167px;
+}
+.avighna-nav-logo img {
+  width: 100%;
+  height: 60px;
+}
+.gap-1 {
+  gap: 10px;
+}
+.gap-2 {
+  gap: 20px;
+}
+.text-decoration-none {
+  text-decoration: none;
+  color: #000;
+}
+.text-center {
+  text-align: center;
+}
+.contact-us-btn {
+  width: 140px;
+  background-color: var(--blue-color);
+  text-align: center;
+  padding: 7px 0px;
+  border-radius: 20px;
+}
+.contact-us-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+nav {
+  padding: 10px 0px;
+}
+nav a {
+  font-size: var(--font-size);
+  font-weight: 500;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-relative {
+  position: relative;
+}
+.w-50 {
+  width: 40%;
+  margin: auto;
+}
+.quote {
+  z-index: -1;
+  z-index: -1;
+  top: -29px;
+  left: 232px;
+  width: 75px;
+}
+#ceogrey {
+  filter: grayscale(100%);
+}
+.evolution {
+  position: relative;
+  height: 755px;
+}
+.evolution-background-content {
+  background: var(--blue-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 35px;
+  padding: 100px 0px;
+  height: 662px;
+}
+.flex-column {
+  flex-direction: column;
+}
+.evolution-bg-img {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  position: absolute;
+  bottom: 6px;
+  left: 30%;
+}
+.evolution-bg-img #background-img {
+  width: 100%;
+  border-radius: 10px;
+}
+.evolution-text-content {
+  font-size: 18px;
+  line-height: 28.8px;
+  margin: 30px 0px;
+  font-weight: 400;
+}
+.evolution-btns {
+  gap: 20px;
+  align-items: center;
+}
+.learn-more-btn {
+  background-color: #fff;
+  color: var(--blue-color);
+  text-decoration: none;
+  padding: 5px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.see-our-work-btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+#web-design {
+  position: absolute;
+  height: 30px;
+  top: -31px;
+  left: 20px;
+}
+#web-development {
+  position: absolute;
+  right: -81px;
+  height: 30px;
+  top: 67px;
+}
+#software-development {
+  position: absolute;
+  bottom: 101px;
+  left: -61px;
+  height: 30px;
+}
+.trusted-companies-logos img {
+  height: 30px;
+}
+.trusted-companies-logos {
+  gap: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.w-80 {
+  width: 80%;
+  margin: auto;
+}
+.evolution-background-content h1 {
+  font-size: 64px;
+  line-height: 76.8px;
+  font-weight: 600;
+}
+.trusted-clients h4 {
+  font-size: 22px;
+  color: #686f76;
+  font-weight: 500;
+  line-height: 28.8px;
+}
+.w-50 {
+  width: 50%;
+}
+.experience-years {
+  color: var(--blue-color);
+}
+#about {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #686f76;
+}
+#business-building-experience {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  padding: 10px 0px 30px 0px;
+}
+.experience-years {
+  color: var(--blue-color);
+}
+#business-building-content {
+  color: #686f76;
+  line-height: 25.6px;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 30px;
+}
+.avighna-technologies-ceo-signature {
+  padding-top: 20px;
+}
+#happy-customer-count,
+.project-completed-number h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 72.61px;
+  color: var(--blue-color);
+}
+.happy-customers-number h5,
+.project-completed-number h5 {
+  line-height: 21.78px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.business-building-experience {
+  padding: 80px 0px;
+}
+.industries-domains {
+  padding: 80px 0px;
+  margin: 80px 0px;
+}
+.happy-customers-number h5 {
+  border-right: 2px solid #c1c8cd;
+  padding-right: 20px;
+}
+.avighna-technologies-ceo-signature h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.avighna-technologies-ceo-signature p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #686f76;
+  padding-top: 5px;
+}
+.our-specifications h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #686f76;
+}
+.our-specifications h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.our-specifications h1 span {
+  color: var(--blue-color);
+}
+.succeed-projects h3,
+.happy-clients-counting h3,
+.our-presence h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.succeed-projects p,
+.happy-clients-counting p,
+.our-presence p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  text-align: center;
+}
+.succeed-projects img,
+.happy-clients-counting img,
+.our-presence img {
+  height: 68px;
+  width: 68px;
+}
+.specification-lists {
+  padding-top: 40px;
+  gap: 20px;
+}
+.succeed-projects,
+.happy-clients-counting {
+  border-right: 2px solid #c1c8cd;
+  padding-right: 20px;
+}
+.industries-domains {
+  background-color: #000;
+  color: #fff;
+}
+.industries-domains h1 {
+  font-size: 48px;
+  font-weight: 500;
+  padding: 10px 0px 60px 0px;
+  line-height: 57.6px;
+}
+.industries-domains h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.industries-domains h1 span {
+  color: #beeeff;
+}
+.industries-domains-img {
+  margin-bottom: 35px;
+}
+
+#border-top::before {
+  border-top: 2px solid #fff;
+  content: " 01 Web Development";
+  padding-top: 7px;
+}
+.lets-discuss-btn {
+  background-color: #fff;
+  color: var(--blue-color);
+  padding: 7px 25px;
+  font-size: 16px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.cta-section-bg-img {
+  background-image: url(./images/3\ 1.png);
+  border-radius: 24px;
+  height: 480px;
+  color: #fff;
+  margin: 80px 0px;
+}
+.cta-section {
+  width: 1028px;
+  margin: auto;
+}
+.cta-section-bg-img h1 {
+  padding: 10px 0px 50px 0px;
+}
+.cta-section-bg-img h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.cta-section-bg-img h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+footer {
+  background-color: var(--blue-color);
+  background-image: url(./images/conny-schneider-xuTJZ7uD7PI-unsplash1.png);
+  height: 526px;
+  color: #fff;
+}
+.footer-content {
+  width: 80%;
+  margin: auto;
+}
+.company-details {
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding: 40px 0px;
+}
+
+footer ul li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+#company-address {
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 400 !important;
+}
+#email,
+#contact-no {
+  font-size: 14px;
+  font-weight: 400;
+}
+#email {
+  padding: 10px 0px;
+}
+footer ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+#social-media-title {
+  font-size: 24px;
+
+  font-weight: 400;
+}
+#social-media-content {
+  padding: 15px 0px;
+}
+.footer-links p,
+.footer-links a {
+  font-size: 12px;
+}
+.sub-sub-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #686f76;
+}
+.headings {
+  font-size: 44px;
+  /* font-size: 48px; */
+  font-weight: 500;
+  padding: 10px 0px 50px 0px;
+  line-height: 57.6px;
+}
+.sub-heading {
+  font-size: 32px;
+  font-weight: 500;
+}
+.contents {
+  font-size: 16px;
+  color: #686f76;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.case-study {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+.headings span {
+  color: var(--blue-color);
+}
+.digital-wallet {
+  background-image: url(./images/Mesh\ gradeint\ bg\ 1.png);
+  padding-bottom: 35px;
+  background-position: top;
+}
+.pb-2 {
+  padding-bottom: 20px;
+}
+.card {
+  padding: 20px 25px 0px 25px;
+  background-color: #f2f5f9;
+  border-radius: 20px;
+  border: 1px solid #c1c8cd;
+}
+#trusted-companies-content {
+  line-height: 33px;
+}
+.gap-3 {
+  gap: 30px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.slider-lists {
+  justify-content: flex-end;
+}
+
+.slider-lists p {
+  background-color: #c1c8cd;
+  height: 2px;
+  display: block;
+  width: 60px;
+}
+#slider-first-border {
+  background-color: var(--blue-color) !important;
+}
+.customers-pink-bg {
+  background-image: url(./images/Mesh\ gradeint\ bg\ 2.png);
+  background-position: center;
+  padding-top: 80px;
 }
