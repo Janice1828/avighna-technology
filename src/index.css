@@ -147,9 +147,18 @@ nav a {
   font-size: 16px;
   border-radius: 20px;
 }
-.see-our-work-btn {
-  background-color: transparent;
+.innovative-learn-more-btn {
+  background-color: var(--blue-color);
   color: #fff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.innovative-see-our-work-btn {
+  background-color: transparent;
+color:#000;
   font-size: 16px;
   text-decoration: none;
 }
@@ -484,4 +493,14 @@ footer ul {
   background-image: url(./images/Mesh\ gradeint\ bg\ 2.png);
   background-position: center;
   padding-top: 80px;
+}
+.innvotive-intuitive h1 span {
+  color: var(--blue-color);
+}
+.innvotive-intuitive h1 {
+  line-height: 44px;
+}
+#innvotive-intuitive-content {
+  padding: 20px 0px 40px 0px;
+  line-height: 25px;
 }
