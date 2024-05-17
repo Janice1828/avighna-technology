@@ -22,7 +22,7 @@ const Innovative = () => {
                 consectetur
                 <br /> adipiscing elit. Ut elit tellus, luctus nec.
               </p>
-              <div className="btn-groups gap-2 d-flex align-items-center">
+              <div className="btn-groups gap-4 d-flex align-items-center">
                 <a href="#" className="innovative-learn-more-btn">
                   Learn More
                 </a>

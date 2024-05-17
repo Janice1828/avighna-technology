@@ -14,7 +14,7 @@ const Customers = () => {
           <div className="d-flex justify-content-center position-relative gap-3">
             <div>
               <img src={CEO} alt="" id="ceogrey" />
-              <h5>Francis Towne</h5>
+              <h5 id="customers-ceo-name">Francis Towne</h5>
               <p className="contents">
                 Future Response
                 <br /> Technician
