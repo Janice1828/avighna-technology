@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import Services from "./Services";
+import Services from "../data/Services";
 const Industriesdomain = () => {
   const initValue = Services[0];
   const [serviceImg, setServiceImg] = useState(initValue);
   const displayservice = (id) => {
-    setServiceImg(Services[id - 1]);
+    setServiceImg(Services[id]);
   };
   return (
     <div className="industries-domains">
@@ -19,12 +19,14 @@ const Industriesdomain = () => {
           <img
             src={serviceImg.img}
             alt=""
-            style={{ height: "650px", objectFit: "contain" }}
+            style={{ height: "650px", objectFit: "cover" }}
           />
           <div className="d-flex gap-2 mt-4">
             {Services.map((service) => (
               <p
-                className="cursor-pointer"
+                className={`cursor-pointer ${
+                  service.id === serviceImg.id ? "selected" : " "
+                }`}
                 key={service.id}
                 onClick={() => {
                   displayservice(service.id);

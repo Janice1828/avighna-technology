@@ -119,6 +119,7 @@ nav a {
   padding: 100px 0px;
   height: 680px;
 }
+
 .flex-column {
   flex-direction: column;
 }
@@ -348,10 +349,10 @@ nav a {
   margin-bottom: 35px;
 }
 
-#border-top::before {
+.selected {
   border-top: 2px solid #fff;
-  content: " 01 Web Development";
   padding-top: 7px;
+  transform: translateY(-9px);
 }
 .lets-discuss-btn {
   background-color: #fff;
@@ -504,7 +505,7 @@ footer ul {
   display: block;
   width: 60px;
 }
-#slider-first-border {
+.sliderborder {
   background-color: var(--blue-color) !important;
 }
 .customers-pink-bg {
