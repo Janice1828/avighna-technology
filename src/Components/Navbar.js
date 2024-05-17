@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../images/logoav 1.png";
 import { Link } from "react-router-dom";
-
 const Navbar = () => {
   return (
     <nav className="w-80 m-auto d-flex justify-content-between align-items-center">

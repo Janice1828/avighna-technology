@@ -231,7 +231,7 @@ nav a {
 #business-building-experience {
   font-size: 44px;
   font-weight: 500;
-  line-height: 57.6px;
+  line-height: 53px;
   padding: 10px 0px 30px 0px;
 }
 .experience-years {
@@ -521,4 +521,5 @@ footer ul {
 #innvotive-intuitive-content {
   padding: 20px 0px 40px 0px;
   line-height: 25px;
+  color: #686f76;
 }
