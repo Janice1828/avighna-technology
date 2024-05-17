@@ -1,6 +1,6 @@
 import React from "react";
-import Rightcol from "./images/Right-col.png";
-import Blackarrow from "./images/black_arrow.png";
+import Rightcol from "../images/Right-col.png";
+import Blackarrow from "../images/black_arrow.png";
 const Innovative = () => {
   return (
     <>

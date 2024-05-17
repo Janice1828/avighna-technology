@@ -1,6 +1,6 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
-import Innovative from "./Innovative";
+import Innovative from "./Components/Innovative";
 
 function App() {
   return (
