@@ -5,6 +5,9 @@ import Gymcloud from "../images/mockup2.png";
 import Blackarrow from "../images/black_arrow.png";
 
 const Featuredproject = () => {
+  const displayModal = () => {
+    alert("asd");
+  };
   return (
     <>
       <div className="digital-wallet">
@@ -63,8 +66,12 @@ const Featuredproject = () => {
                 tellus, luctus nec.Lorem ipsum dolor sit amet, consectetur
                 adipiscing elit. Ut elit tellus, luctus nec.
               </p>
-              <p className="case-study pb-2">
-                View Case Study <img src={Blackarrow} alt="" />
+              <p
+                onClick={displayModal}
+                className="case-study pb-2 cursor-pointer"
+              >
+                View Case Study
+                <img src={Blackarrow} alt="" />
               </p>
               <div className="d-flex justify-content-center">
                 <img src={Gymcloud} alt="" />

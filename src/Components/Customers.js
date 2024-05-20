@@ -5,7 +5,14 @@ import Customersdata from "../data/Customersdata";
 const Customers = () => {
   const [customerData, setCustomerData] = useState(Customersdata[0]);
   const displayCustomers = (id) => {
-    setCustomerData(Customersdata[id]);
+    function findId(num) {
+      if (num.id == id) {
+        return num;
+      }
+    }
+
+    const data = Customersdata.find(findId);
+    setCustomerData(data);
   };
   return (
     <div className="customers-pink-bg">

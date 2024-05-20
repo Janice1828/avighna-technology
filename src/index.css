@@ -501,7 +501,7 @@ footer ul {
 
 .slider-lists p {
   background-color: #c1c8cd;
-  height: 2px;
+  height: 5px;
   display: block;
   width: 60px;
 }
@@ -523,4 +523,26 @@ footer ul {
   padding: 20px 0px 40px 0px;
   line-height: 25px;
   color: #686f76;
+}
+.modal {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+dialog {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.owl-carousel .owl-item img {
+  height: 35px;
+  width: 85% !important;
+  cursor: pointer;
+}
+.owl-nav,
+.owl-dots {
+  display: none;
 }
