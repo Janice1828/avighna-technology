@@ -212,8 +212,8 @@ nav a {
   margin-top: 40px;
 }
 .trusted-clients h4 {
-  font-size: 22px;
-  color: #686f76;
+  font-size: 24px;
+  color: #000;
   font-weight: 500;
   line-height: 28.8px;
 }
@@ -230,7 +230,7 @@ nav a {
   color: #686f76;
 }
 #business-building-experience {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 53px;
   padding: 10px 0px 30px 0px;
@@ -251,7 +251,7 @@ nav a {
 #happy-customer-count,
 .project-completed-number h1 {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 72.61px;
   color: var(--blue-color);
 }
@@ -288,7 +288,7 @@ nav a {
   color: #686f76;
 }
 .our-specifications h1 {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 500;
 }
 .our-specifications h1 span {
@@ -333,10 +333,13 @@ nav a {
   color: #fff;
 }
 .industries-domains h1 {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 500;
   padding: 10px 0px 60px 0px;
   line-height: 57.6px;
+}
+.industries-domains-img p {
+  font-size: 20px;
 }
 .industries-domains h5 {
   font-size: 20px;
@@ -378,7 +381,7 @@ nav a {
   font-weight: 500;
 }
 .cta-section-bg-img h1 {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 500;
   padding: 10px 0px 50px 0px;
 }
@@ -429,6 +432,7 @@ footer ul {
   font-weight: 400;
 }
 #social-media-content {
+  font-size: 14px;
   padding: 15px 0px;
 }
 .footer-links p,
@@ -441,7 +445,7 @@ footer ul {
   color: #686f76;
 }
 .headings {
-  font-size: 44px;
+  font-size: 48px;
   /* font-size: 48px; */
   font-weight: 500;
   padding: 10px 0px 50px 0px;
@@ -488,6 +492,7 @@ footer ul {
 }
 #trusted-companies-content {
   line-height: 33px;
+  font-size: 24px;
 }
 .gap-3 {
   gap: 30px;
