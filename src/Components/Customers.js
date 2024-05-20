@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Quote from "../images/ci_double-quotes-l.png";
 import CEO from "../images/Image 1x1.png";
 import Customersdata from "../data/Customersdata";
+import Leftarrow from "../images/left-arrow.png";
+import Rightarrow from "../images/right-arrow.png";
 const Customers = () => {
   const [customerData, setCustomerData] = useState(Customersdata[0]);
   const displayCustomers = (id) => {
@@ -14,6 +16,20 @@ const Customers = () => {
     const data = Customersdata.find(findId);
     setCustomerData(data);
   };
+  const previousData = () => {
+    const currentDataInd = Customersdata.indexOf(customerData);
+    if (currentDataInd >= 1) {
+      const newData = Customersdata[currentDataInd - 1];
+      setCustomerData(newData);
+    }
+  };
+  const nextData = () => {
+    const currentDataInd = Customersdata.indexOf(customerData);
+    if (currentDataInd < Customersdata.length - 1) {
+      const newData = Customersdata[currentDataInd + 1];
+      setCustomerData(newData);
+    }
+  };
   return (
     <div className="customers-pink-bg">
       <div className="w-50">
@@ -22,38 +38,63 @@ const Customers = () => {
           <h1 className="headings text-center">
             <span>Trusted</span> By Thousand For Companies & Individuals
           </h1>
-          <div className="d-flex justify-content-center position-relative gap-3">
+          <div className="d-flex align-items-center gap-3">
             <div>
               <img
-                src={customerData.img}
+                src={Leftarrow}
                 alt=""
-                id="ceogrey"
-                style={{
-                  height: "128px",
-                  width: "128px",
-                  objectFit: "contain",
+                className="carousel-arrow"
+                onClick={() => {
+                  previousData();
                 }}
               />
-              <h5 id="customers-ceo-name">{customerData.name}</h5>
-              <p className="contents">{customerData.designation}</p>
+            </div>
+            <div className="d-flex justify-content-center position-relative gap-3">
+              <div>
+                <img
+                  src={customerData.img}
+                  alt=""
+                  id="ceogrey"
+                  style={{
+                    height: "128px",
+                    width: "128px",
+                    objectFit: "contain",
+                  }}
+                />
+                <h5 id="customers-ceo-name">{customerData.name}</h5>
+                <p className="contents" style={{ paddingBottom: "0px" }}>
+                  {customerData.designation}
+                </p>
+              </div>
+              <div>
+                <img
+                  src={Quote}
+                  alt="Quote"
+                  className="position-absolute quote"
+                />
+                <p id="trusted-companies-content">
+                  “Lorem ipsum dolor sit amet consectetur. Adipiscing
+                  <br /> ut nisi leo nibh eros in. Sed nulla quis scelerisque
+                  <br /> vitae. Fringilla massa facilisis non mattis mauris
+                  nisl.
+                  <br /> Dui ut hendrerit fames imperdiet proin nisl sit
+                  <br />
+                  mauris.”
+                </p>
+              </div>
             </div>
             <div>
               <img
-                src={Quote}
-                alt="Quote"
-                className="position-absolute quote"
+                src={Rightarrow}
+                alt=""
+                className="carousel-arrow"
+                onClick={() => {
+                  nextData();
+                }}
               />
-              <p id="trusted-companies-content">
-                “Lorem ipsum dolor sit amet consectetur. Adipiscing
-                <br /> ut nisi leo nibh eros in. Sed nulla quis scelerisque
-                <br /> vitae. Fringilla massa facilisis non mattis mauris nisl.
-                <br /> Dui ut hendrerit fames imperdiet proin nisl sit
-                <br />
-                mauris.”
-              </p>
             </div>
           </div>
-          <div className="slider-lists d-flex gap-2">
+          <div className="slider-lists mt-3 d-flex gap-2">
             {Customersdata.map((item) => (
               <p
                 key={item.id}

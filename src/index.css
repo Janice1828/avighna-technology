@@ -546,3 +546,7 @@ dialog {
 .owl-dots {
   display: none;
 }
+.carousel-arrow {
+  height: 25px;
+  cursor: pointer;
+}
