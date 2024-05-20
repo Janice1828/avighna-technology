@@ -9,6 +9,13 @@ import Featuredproject from "./Components/Featuredproject";
 import Customers from "./Components/Customers";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import EvolutionData from "./data/Evolutiondata";
+import TrustedClientsData from "./data/TrustedClientsData";
+import BusinessBuildingExperienceData from "./data/BusinessBuildingExperienceData";
+import SpecificationData from "./data/SpecificationData";
+import ServicesData from "./data/ServicesData";
+import FeaturedProjectData from "./data/FeaturedProjectData";
+import Customersdata from "./data/Customersdata";
 const Home = () => {
   return (
     <>
@@ -20,17 +27,58 @@ const Home = () => {
         >
           <div className="w-80 m-auto">
             <div>
-              <Evolution />
-              <Trustedclients />
+              <Evolution
+                heading={EvolutionData.heading}
+                content={EvolutionData.content}
+                btnOne={EvolutionData.btnOne}
+                btnTwo={EvolutionData.btnTwo}
+              />
+              <Trustedclients
+                heading={TrustedClientsData.heading}
+                data={TrustedClientsData.data}
+              />
             </div>
-            <Businessbuildingexperience />
-            <Specifications />
+            <Businessbuildingexperience
+              mainTitle={BusinessBuildingExperienceData.mainTitle}
+              title={BusinessBuildingExperienceData.title}
+              content={BusinessBuildingExperienceData.content}
+              happyCustomerNumber={
+                BusinessBuildingExperienceData.happyCustomerNumber
+              }
+              projectCompletedNumber={
+                BusinessBuildingExperienceData.projectCompletedNumber
+              }
+              ceoImg={BusinessBuildingExperienceData.ceoImg}
+              CeoSign={BusinessBuildingExperienceData.CeoSign}
+              ceoName={BusinessBuildingExperienceData.ceoName}
+              img={BusinessBuildingExperienceData.img}
+            />
+            <Specifications
+              mainTitle={SpecificationData.mainTitle}
+              title={SpecificationData.title}
+              data={SpecificationData.data}
+            />
           </div>
         </div>
-        <Industriesdomain />
+        <Industriesdomain
+          mainTitle={ServicesData.mainTitle}
+          title={ServicesData.title}
+          data={ServicesData.data}
+        />
         <div className="customized-solutions">
-          <Featuredproject />
-          <Customers />
+          <Featuredproject
+            title={FeaturedProjectData.title}
+            mainTitle={FeaturedProjectData.mainTitle}
+            paymor={FeaturedProjectData.paymor}
+            gymcloud={FeaturedProjectData.gymcloud}
+            digitalWallet={FeaturedProjectData.digitalWallet}
+          />
+          <Customers
+            mainTitle={Customersdata.mainTitle}
+            title={Customersdata.title}
+            content={Customersdata.content}
+            data={Customersdata.data}
+          />
         </div>
         <Contact />
         <Footer />

@@ -7,7 +7,7 @@ const Innovative = () => {
       <div className="innvotive-intuitive">
         <div className="w-80">
           <div className="d-flex">
-            <div className="w-50">
+            <div>
               <h1>
                 Delivering
                 <span>
@@ -31,8 +31,8 @@ const Innovative = () => {
                 </a>
               </div>
             </div>
-            <div className="w-50">
-              <img src={Rightcol} style={{ width: "100%" }} />
+            <div>
+              <img src={Rightcol} />
             </div>
           </div>
         </div>

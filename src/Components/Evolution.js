@@ -5,24 +5,18 @@ import Softwaredevelopment from "../images/Floating Element (1).png";
 import Webdevelopment from "../images/Floating Element.png";
 import Arrowicon from "../images/tabler-icon-arrow-up-right.png";
 
-const Evolution = () => {
+const Evolution = ({ heading, content, btnOne, btnTwo, img }) => {
   return (
     <div className="evolution">
       <div className="evolution-background-content">
-        <h1 className="text-center">
-          Your IT Evolution <br />
-          Starts Here
-        </h1>
-        <p className="text-center evolution-text-content">
-          Lorem Ipsum estibulum blandit libero at mauris condi mentum males
-          <br /> uada scelerisque in mauris ut mada.
-        </p>
+        <h1 className="text-center">{heading}</h1>
+        <p className="text-center evolution-text-content">{content}</p>
         <div className="d-flex evolution-btns">
           <a href="#" className="learn-more-btn">
-            Learn More
+            {btnOne}
           </a>
           <a href="#" className="see-our-work-btn">
-            <span>See Our Work</span> <img src={Arrowicon} alt="" />
+            <span>{btnTwo}</span> <img src={Arrowicon} alt="" />
           </a>
         </div>
       </div>

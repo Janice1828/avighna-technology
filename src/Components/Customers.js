@@ -1,32 +1,30 @@
 import React, { useEffect, useState } from "react";
 import Quote from "../images/ci_double-quotes-l.png";
-import CEO from "../images/Image 1x1.png";
-import Customersdata from "../data/Customersdata";
 import Leftarrow from "../images/left-arrow.png";
 import Rightarrow from "../images/right-arrow.png";
-const Customers = () => {
-  const [customerData, setCustomerData] = useState(Customersdata[0]);
+const Customers = ({ mainTitle, title, content, data }) => {
+  const [customerData, setCustomerData] = useState(data[0]);
+
   const displayCustomers = (id) => {
     function findId(num) {
       if (num.id == id) {
         return num;
       }
     }
-
-    const data = Customersdata.find(findId);
-    setCustomerData(data);
+    const newdata = data.find(findId);
+    setCustomerData(newdata);
   };
   const previousData = () => {
-    const currentDataInd = Customersdata.indexOf(customerData);
+    const currentDataInd = data.indexOf(customerData);
     if (currentDataInd >= 1) {
-      const newData = Customersdata[currentDataInd - 1];
+      const newData = data[currentDataInd - 1];
       setCustomerData(newData);
     }
   };
   const nextData = () => {
-    const currentDataInd = Customersdata.indexOf(customerData);
-    if (currentDataInd < Customersdata.length - 1) {
-      const newData = Customersdata[currentDataInd + 1];
+    const currentDataInd = data.indexOf(customerData);
+    if (currentDataInd < data.length - 1) {
+      const newData = data[currentDataInd + 1];
       setCustomerData(newData);
     }
   };
@@ -34,10 +32,8 @@ const Customers = () => {
     <div className="customers-pink-bg">
       <div className="w-50">
         <div className="customers position-relative">
-          <h5 className="sub-sub-heading text-center">Customers</h5>
-          <h1 className="headings text-center">
-            <span>Trusted</span> By Thousand For Companies & Individuals
-          </h1>
+          <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
+          <h1 className="headings text-center">{title}</h1>
           <div className="d-flex align-items-center gap-3">
             <div>
               <img
@@ -75,15 +71,7 @@ const Customers = () => {
                   alt="Quote"
                   className="position-absolute quote"
                 />
-                <p id="trusted-companies-content">
-                  “Lorem ipsum dolor sit amet consectetur. Adipiscing
-                  <br /> ut nisi leo nibh eros in. Sed nulla quis scelerisque
-                  <br /> vitae. Fringilla massa facilisis non mattis mauris
-                  nisl.
-                  <br /> Dui ut hendrerit fames imperdiet proin nisl sit
-                  <br />
-                  mauris.”
-                </p>
+                <p id="trusted-companies-content">{content}</p>
               </div>
             </div>
             <div>
@@ -98,7 +86,7 @@ const Customers = () => {
             </div>
           </div>
           <div className="slider-lists mt-3 d-flex gap-2">
-            {Customersdata.map((item) => (
+            {data.map((item) => (
               <p
                 key={item.id}
                 className={`cursor-pointer btn ${
