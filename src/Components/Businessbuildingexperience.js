@@ -6,10 +6,10 @@ import CEO from "../images/Image 1x1.png";
 const Businessbuildingexperience = () => {
   return (
     <div className="business-building-experience d-flex">
-      <div className="w-50">
+      <div>
         <img src={Businessexp} alt="" />
       </div>
-      <div className="w-50" style={{ paddingLeft: "25px" }}>
+      <div>
         <h5 id="about">About</h5>
         <h2 id="business-building-experience">
           Over&nbsp;

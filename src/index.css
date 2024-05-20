@@ -230,6 +230,7 @@ nav a {
   color: #686f76;
 }
 #business-building-experience {
+  gap: 25px;
   font-size: 48px;
   font-weight: 500;
   line-height: 53px;
@@ -263,6 +264,7 @@ nav a {
 }
 .business-building-experience {
   padding: 100px 0px;
+  flex-wrap: wrap;
 }
 .industries-domains {
   padding: 80px 0px;
@@ -543,7 +545,6 @@ dialog {
   left: 40%;
 }
 .owl-carousel .owl-item img {
-  height: 35px;
   width: 85% !important;
   cursor: pointer;
 }

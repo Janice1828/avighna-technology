@@ -19,7 +19,7 @@ const Featuredproject = () => {
             <br /> Customized Solutions
           </h1>
           <div className="d-flex gap-2">
-            <div className="w-30">
+            <div>
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">Digital Wallet</h2>
@@ -35,7 +35,7 @@ const Featuredproject = () => {
                 </div>
               </div>
             </div>
-            <div className="w-70">
+            <div>
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">Paymor</h2>
