@@ -13,13 +13,17 @@ const Featuredproject = ({
       <div className="digital-wallet">
         <div className="w-80">
           <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
-          <h1 className="headings text-center">{title}</h1>
+          <h1 className="headings text-center customized-solutios-heading">
+            {title}
+          </h1>
           <div className="d-flex gap-2">
             <div>
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{digitalWallet.title}</h2>
-                  <p className="contents">{digitalWallet.content}</p>
+                  <p className="contents digital-wallet-content">
+                    {digitalWallet.content}
+                  </p>
                   <a href="#" className="case-study">
                     View Case Study <img src={Blackarrow} alt="" />
                   </a>
@@ -31,7 +35,7 @@ const Featuredproject = ({
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{paymor.title}</h2>
-                  <p className="contents">{paymor.content}</p>
+                  <p className="contents paymor-content">{paymor.content}</p>
                   <div className="d-flex">
                     <a href="#" className="case-study">
                       View Case Study <img src={Blackarrow} alt="" />
@@ -49,7 +53,7 @@ const Featuredproject = ({
           <div className="card">
             <div className="card-content">
               <h2 className="sub-heading">{gymcloud.title}</h2>
-              <p className="contents">{gymcloud.content}</p>
+              <p className="contents gym-cloud-content">{gymcloud.content}</p>
               <p className="case-study pb-2 cursor-pointer">
                 View Case Study
                 <img src={Blackarrow} alt="" />

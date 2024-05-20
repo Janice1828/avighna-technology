@@ -140,6 +140,7 @@ nav a {
   line-height: 28.8px;
   margin: 30px 0px;
   font-weight: 400;
+  width: 580px;
 }
 .evolution-btns {
   gap: 40px;
@@ -207,6 +208,7 @@ nav a {
   font-size: 64px;
   line-height: 76.8px;
   font-weight: 600;
+  width: 525px;
 }
 .trusted-clients {
   margin-top: 40px;
@@ -216,6 +218,7 @@ nav a {
   color: #000;
   font-weight: 500;
   line-height: 28.8px;
+  width: 250px;
 }
 .w-50 {
   width: 50%;
@@ -231,6 +234,7 @@ nav a {
 }
 #business-building-experience {
   gap: 25px;
+  width: 510px;
   font-size: 48px;
   font-weight: 500;
   line-height: 53px;
@@ -245,6 +249,7 @@ nav a {
   font-weight: 400;
   font-size: 16px;
   padding-bottom: 30px;
+  width: 600px;
 }
 .avighna-technologies-ceo-signature {
   padding-top: 20px;
@@ -262,9 +267,24 @@ nav a {
   font-weight: 500;
   font-size: 18px;
 }
+.digital-wallet-content {
+  width: 305px;
+}
+.paymor-content {
+  width: 760px;
+}
+.gym-cloud-content {
+  width: 660px;
+}
 .business-building-experience {
   padding: 100px 0px;
   flex-wrap: wrap;
+  gap: 11px;
+}
+.customized-solutios-heading {
+  width: 560px;
+  text-align: center;
+  margin: auto;
 }
 .industries-domains {
   padding: 80px 0px;
@@ -495,6 +515,7 @@ footer ul {
 #trusted-companies-content {
   line-height: 33px;
   font-size: 24px;
+  width: 600px;
 }
 .gap-3 {
   gap: 30px;
