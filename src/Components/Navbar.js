@@ -7,20 +7,20 @@ const Navbar = () => {
       <div className="avighna-nav-logo">
         <img src={Logo} alt="Avighna Logo" />
       </div>
-      <div className="d-flex align-items-center gap-2">
-        <Link to="#" className="text-decoration-none">
+      <div className="d-flex align-items-center gap-2 nav-link">
+        <Link to="#" className="text-decoration-none nav-link">
           Home
         </Link>
-        <Link to="#" className="text-decoration-none">
+        <Link to="#" className="text-decoration-none nav-link">
           Work
         </Link>
-        <Link to="#" className="text-decoration-none">
+        <Link to="#" className="text-decoration-none nav-link">
           Company
         </Link>
-        <Link to="#" className="text-decoration-none">
+        <Link to="#" className="text-decoration-none nav-link">
           Our Insight
         </Link>
-        <Link to="#" className="text-decoration-none">
+        <Link to="#" className="text-decoration-none nav-link">
           Career
         </Link>
       </div>

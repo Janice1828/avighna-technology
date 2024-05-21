@@ -65,15 +65,23 @@
   text-align: center;
 }
 .contact-us-btn {
-  width: 140px;
-  background-color: var(--blue-color);
   text-align: center;
-  padding: 7px 0px;
-  border-radius: 20px;
 }
+/* .contact-us-btn:hover {
+  background: #fff;
+} */
 .contact-us-btn a {
   text-decoration: none;
   color: #fff;
+  background-color: var(--blue-color);
+  padding: 7px 20px;
+  border-radius: 20px;
+}
+.contact-us-btn a:hover {
+  color: var(--blue-color);
+  background-color: #fff;
+  outline: 1px solid var(--blue-color);
+  transition: 0.4s;
 }
 nav {
   padding: 10px 0px;
@@ -576,4 +584,51 @@ dialog {
 .carousel-arrow {
   height: 25px;
   cursor: pointer;
+}
+.nav-link:hover {
+  color: var(--blue-color);
+  transition: 0.4s;
+}
+.learn-more-btn:hover {
+  color: #ffff;
+  background-color: var(--blue-color);
+  transition: 0.4s;
+}
+.see-our-work-btn:hover {
+  transform: scale(1.1);
+}
+.services-lists:hover {
+  color: var(--blue-color);
+  transition: 0.4s;
+}
+.case-study:hover {
+  color: var(--blue-color);
+  transition: 0.4s;
+}
+.lets-discuss-btn:hover {
+  background: transparent;
+  color: #fff;
+  outline: 1px solid #fff;
+  transition: 0.4s;
+}
+.social-media-icons img:hover {
+  transform: scale(1.2);
+}
+footer ul li a:hover {
+  color: var(--blue-color);
+  transition: 0.4s;
+}
+.footer-links a:hover {
+  color: var(--blue-color);
+  transition: 0.4s;
+}
+.innovative-learn-more-btn:hover {
+  color: var(--blue-color);
+  outline: 1px solid var(--blue-color);
+  background-color: #fff;
+  transition: 0.4s;
+}
+.innovative-see-our-work-btn:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
 }

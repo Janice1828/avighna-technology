@@ -42,10 +42,10 @@ const Footer = () => {
               <br /> our digital community
             </p>
             <div className="social-media-icons d-flex gap-2">
-              <img src={Facebooklogo} alt="" />
-              <img src={Instagramlogo} alt="" />
-              <img src={Linkedinlogo} alt="" />
-              <img src={Twitterlogo} alt="" />
+              <img src={Facebooklogo} alt="" className="cursor-pointer" />
+              <img src={Instagramlogo} alt="" className="cursor-pointer" />
+              <img src={Linkedinlogo} alt="" className="cursor-pointer" />
+              <img src={Twitterlogo} alt="" className="cursor-pointer" />
             </div>
           </div>
         </div>

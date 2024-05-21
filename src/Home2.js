@@ -21,18 +21,18 @@ const Home2 = () => {
           <div className="w-80 m-auto">
             <div>
               <Innovative />
-              <Trustedclients />
+              {/* <Trustedclients /> */}
             </div>
-            <Businessbuildingexperience />
-            <Specifications />
+            {/* <Businessbuildingexperience /> */}
+            {/* <Specifications /> */}
           </div>
         </div>
-        <Industriesdomain />
+        {/* <Industriesdomain /> */}
         <div className="customized-solutions">
-          <Featuredproject />
-          <Customers />
+          {/* <Featuredproject /> */}
+          {/* <Customers /> */}
         </div>
-        <Contact />
+        {/* <Contact /> */}
         <Footer />
       </div>
     </>

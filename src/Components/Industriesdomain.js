@@ -20,7 +20,7 @@ const Industriesdomain = ({ mainTitle, title, data }) => {
           <div className="d-flex gap-2 mt-4">
             {data.map((service) => (
               <p
-                className={`cursor-pointer ${
+                className={`cursor-pointer services-lists ${
                   service.id === serviceImg.id ? "selected" : " "
                 }`}
                 key={service.id}
