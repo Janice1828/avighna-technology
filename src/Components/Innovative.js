@@ -5,7 +5,7 @@ const Innovative = () => {
   return (
     <>
       <div className="innvotive-intuitive">
-        <div className="w-80">
+        <div>
           <div className="d-flex">
             <div>
               <h1>
@@ -17,10 +17,9 @@ const Innovative = () => {
                 <br /> Experiences
               </h1>
               <p id="innvotive-intuitive-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                <br /> Ut elit tellus, luctus nec.Lorem ipsum dolor sit amet,
-                consectetur
-                <br /> adipiscing elit. Ut elit tellus, luctus nec.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec.Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Ut elit tellus, luctus nec.
               </p>
               <div className="btn-groups gap-4 d-flex align-items-center">
                 <a href="#" className="innovative-learn-more-btn">

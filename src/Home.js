@@ -23,9 +23,9 @@ const Home = () => {
         <Navbar />
         <div
           className="avighna-content-container"
-          style={{ paddingTop: "30px" }}
+          style={{ paddingTop: "50px" }}
         >
-          <div className="w-80 m-auto">
+          <div className="w-90 m-auto">
             <div>
               <Evolution
                 heading={EvolutionData.heading}

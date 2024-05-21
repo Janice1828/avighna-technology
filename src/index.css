@@ -30,6 +30,7 @@
 }
 .w-90 {
   width: 90%;
+  margin: auto;
 }
 .w-30 {
   width: 30%;
@@ -74,8 +75,9 @@
   text-decoration: none;
   color: #fff;
   background-color: var(--blue-color);
-  padding: 7px 20px;
+  padding: 10px 33px;
   border-radius: 20px;
+  line-height: 19.36px;
 }
 .contact-us-btn a:hover {
   color: var(--blue-color);
@@ -96,6 +98,9 @@ nav a {
 .position-relative {
   position: relative;
 }
+.digital-wallet-imgs {
+  left: 10px;
+}
 .w-50 {
   width: 40%;
   margin: auto;
@@ -115,7 +120,7 @@ nav a {
 }
 .evolution {
   position: relative;
-  height: 755px;
+  height: 967px;
 }
 .evolution-background-content {
   background: var(--blue-color);
@@ -125,19 +130,17 @@ nav a {
   flex-direction: column;
   border-radius: 35px;
   padding: 100px 0px;
-  height: 680px;
+  height: 883px;
 }
 
 .flex-column {
   flex-direction: column;
 }
 .evolution-bg-img {
-  width: 500px;
-  height: 300px;
   margin: auto;
   position: absolute;
-  bottom: -14px;
-  left: 30%;
+  bottom: -3px;
+  left: 19%;
 }
 .evolution-bg-img #background-img {
   width: 100%;
@@ -146,7 +149,7 @@ nav a {
 .evolution-text-content {
   font-size: 18px;
   line-height: 28.8px;
-  margin: 30px 0px;
+  margin: 30px 0px 50px 0px;
   font-weight: 400;
   width: 580px;
 }
@@ -160,6 +163,7 @@ nav a {
   text-decoration: none;
   padding: 8px 32px;
   border: none;
+  line-height: 19.36px;
   font-size: 16px;
   border-radius: 20px;
 }
@@ -170,48 +174,45 @@ nav a {
   padding: 8px 32px;
   border: none;
   font-size: 16px;
+  line-height: 19.36px;
   border-radius: 20px;
 }
 .see-our-work-btn {
   color: #fff;
   text-decoration: none;
+  line-height: 19.36px;
 }
 .innovative-see-our-work-btn {
   background-color: transparent;
   color: #000;
   font-size: 16px;
   text-decoration: none;
+  line-height: 19.36px;
 }
 #web-design {
   position: absolute;
-  height: 30px;
-  top: -31px;
-  left: 20px;
+  top: -56px;
+  left: 15px;
 }
 #web-development {
   position: absolute;
-  right: -81px;
-  height: 30px;
-  top: 67px;
+  right: -104px;
+  top: 116px;
 }
 #software-development {
   position: absolute;
   bottom: 101px;
-  left: -61px;
-  height: 30px;
+  left: -82px;
 }
 .trusted-companies-logos img {
-  height: 30px;
+  height: 40px;
 }
 .trusted-companies-logos {
   gap: 30px;
   display: flex;
   justify-content: flex-end;
 }
-.w-80 {
-  width: 80%;
-  margin: auto;
-}
+
 .evolution-background-content h1 {
   font-size: 64px;
   line-height: 76.8px;
@@ -219,7 +220,7 @@ nav a {
   width: 525px;
 }
 .trusted-clients {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .trusted-clients h4 {
   font-size: 24px;
@@ -245,7 +246,7 @@ nav a {
   width: 510px;
   font-size: 48px;
   font-weight: 500;
-  line-height: 53px;
+  line-height: 57.6px;
   padding: 10px 0px 30px 0px;
 }
 .experience-years {
@@ -260,7 +261,7 @@ nav a {
   width: 600px;
 }
 .avighna-technologies-ceo-signature {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 #happy-customer-count,
 .project-completed-number h1 {
@@ -285,9 +286,9 @@ nav a {
   width: 660px;
 }
 .business-building-experience {
-  padding: 100px 0px;
+  padding: 120px 0px;
   flex-wrap: wrap;
-  gap: 11px;
+  gap: 40px;
 }
 .customized-solutios-heading {
   width: 560px;
@@ -295,8 +296,8 @@ nav a {
   margin: auto;
 }
 .industries-domains {
-  padding: 80px 0px;
-  margin: 100px 0px;
+  padding: 120px 0px;
+  margin: 120px 0px;
 }
 .happy-customers-number h5 {
   border-right: 2px solid #c1c8cd;
@@ -305,21 +306,26 @@ nav a {
 .avighna-technologies-ceo-signature h5 {
   font-size: 16px;
   font-weight: 500;
+  line-height: 19.36px;
 }
 .avighna-technologies-ceo-signature p {
   font-size: 14px;
   font-weight: 400;
   color: #686f76;
   padding-top: 5px;
+  line-height: 16.94px;
 }
 .our-specifications h5 {
   font-size: 20px;
   font-weight: 500;
   color: #686f76;
+  line-height: 24px;
 }
 .our-specifications h1 {
   font-size: 48px;
   font-weight: 500;
+  line-height: 57.6px;
+  padding-top: 10px;
 }
 .our-specifications h1 span {
   color: var(--blue-color);
@@ -330,9 +336,10 @@ nav a {
   font-size: 24px;
   font-weight: 500;
   line-height: 28.8px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 15px;
   text-align: center;
+  width: 379px;
 }
 .succeed-projects p,
 .happy-clients-counting p,
@@ -342,6 +349,7 @@ nav a {
   line-height: 25.6px;
   text-align: center;
   color: #686f76;
+  width: 341px;
 }
 .succeed-projects img,
 .happy-clients-counting img,
@@ -350,8 +358,8 @@ nav a {
   width: 68px;
 }
 .specification-lists {
-  padding-top: 60px;
-  gap: 20px;
+  padding-top: 70px;
+  gap: 50px;
 }
 .succeed-projects,
 .happy-clients-counting {
@@ -374,6 +382,7 @@ nav a {
 .industries-domains h5 {
   font-size: 20px;
   font-weight: 500;
+  line-height: 24px;
 }
 .industries-domains h1 span {
   color: #beeeff;
@@ -400,7 +409,7 @@ nav a {
   border-radius: 24px;
   height: 480px;
   color: #fff;
-  margin: 100px 0px;
+  margin: 120px 0px;
 }
 .cta-section {
   width: 1028px;
@@ -422,7 +431,7 @@ footer {
   color: #fff;
 }
 .footer-content {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .company-details {
@@ -470,6 +479,7 @@ footer ul {
   font-size: 12px;
 }
 .sub-sub-heading {
+  line-height: 24px;
   font-size: 20px;
   font-weight: 500;
   color: #686f76;
@@ -484,12 +494,19 @@ footer ul {
 .sub-heading {
   font-size: 32px;
   font-weight: 500;
+  line-height: 38.4px;
 }
 .contents {
   font-size: 16px;
   color: #686f76;
+  padding-top: 15px;
+  line-height: 25.6px;
+  padding-bottom: 35px;
+}
+.customer-designation {
+  font-size: 16px;
+  color: #686f76;
   padding-top: 5px;
-  line-height: 20.94px;
   padding-bottom: 25px;
 }
 #customers-ceo-name {
@@ -502,26 +519,28 @@ footer ul {
   font-weight: 500;
   color: #000;
   text-decoration: none;
+  z-index: 1;
 }
 .headings span {
   color: var(--blue-color);
 }
 .digital-wallet {
   background-image: url(./images/Mesh\ gradeint\ bg\ 1.png);
-  padding-bottom: 35px;
+  padding-bottom: 50px;
   background-position: top;
 }
 .pb-2 {
   padding-bottom: 20px;
 }
 .card {
-  padding: 20px 25px 0px 25px;
+  padding: 40px 30px 10px 30px;
   background-color: #f2f5f9;
   border-radius: 20px;
   border: 1px solid #c1c8cd;
+  height: 100%;
 }
 #trusted-companies-content {
-  line-height: 33px;
+  line-height: 38.4px;
   font-size: 24px;
   width: 600px;
 }
@@ -547,18 +566,21 @@ footer ul {
 .customers-pink-bg {
   background-image: url(./images/Mesh\ gradeint\ bg\ 2.png);
   background-position: center;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 .innvotive-intuitive h1 span {
   color: var(--blue-color);
 }
 .innvotive-intuitive h1 {
-  font-size: 44px;
+  font-size: 64px;
+  line-height: 76.8px;
 }
+
 #innvotive-intuitive-content {
   padding: 20px 0px 40px 0px;
-  line-height: 25px;
+  line-height: 25.6px;
   color: #686f76;
+  width: 480px;
 }
 .modal {
   height: 100vh;
@@ -585,6 +607,10 @@ dialog {
   height: 25px;
   cursor: pointer;
 }
+
+.nav-link {
+  line-height: 19.36px;
+}
 .nav-link:hover {
   color: var(--blue-color);
   transition: 0.4s;
@@ -596,6 +622,9 @@ dialog {
 }
 .see-our-work-btn:hover {
   transform: scale(1.1);
+}
+.services-lists {
+  line-height: 24px;
 }
 .services-lists:hover {
   color: var(--blue-color);

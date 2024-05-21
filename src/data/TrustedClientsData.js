@@ -6,6 +6,6 @@ import Spherule from "../images/655dd34b3b5f5ab873b54b1d_4.png";
 
 const TrustedClientsData = {
   heading: "Trusted By Thousand For Companies & Individuals",
-  data: [Focalpoint, Nietzsche, Interlock, Biosynthesis, Spherule],
+  data: [Nietzsche, Focalpoint, Spherule, Interlock, Biosynthesis],
 };
 export default TrustedClientsData;

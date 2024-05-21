@@ -8,7 +8,7 @@ const Industriesdomain = ({ mainTitle, title, data }) => {
   };
   return (
     <div className="industries-domains">
-      <div className="w-80">
+      <div className="w-90">
         <h5 className="text-center">{mainTitle}</h5>
         <h1 className="text-center">{title}</h1>
         <div className="industries-domains-img d-flex justify-content-center flex-column">
@@ -17,7 +17,7 @@ const Industriesdomain = ({ mainTitle, title, data }) => {
             alt=""
             style={{ height: "650px", objectFit: "cover" }}
           />
-          <div className="d-flex gap-2 mt-4">
+          <div className="d-flex gap-4 mt-4">
             {data.map((service) => (
               <p
                 className={`cursor-pointer services-lists ${

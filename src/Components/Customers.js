@@ -59,7 +59,7 @@ const Customers = ({ mainTitle, title, content, data }) => {
                 />
                 <h5 id="customers-ceo-name">{customerData.name}</h5>
                 <p
-                  className="contents"
+                  className="customer-designation"
                   style={{ paddingBottom: "0px", fontSize: "14px" }}
                 >
                   {customerData.designation}

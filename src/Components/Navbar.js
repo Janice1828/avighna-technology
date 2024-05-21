@@ -3,7 +3,7 @@ import Logo from "../images/logoav 1.png";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <nav className="w-80 m-auto d-flex justify-content-between align-items-center">
+    <nav className="w-90 m-auto d-flex justify-content-between align-items-center">
       <div className="avighna-nav-logo">
         <img src={Logo} alt="Avighna Logo" />
       </div>

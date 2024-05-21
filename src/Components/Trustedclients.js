@@ -4,7 +4,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Trustedclients = ({ heading, data }) => {
-  console.log(data.length);
   return (
     <div className="trusted-clients d-flex">
       <div className="w-30">

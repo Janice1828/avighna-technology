@@ -11,12 +11,12 @@ const Featuredproject = ({
   return (
     <>
       <div className="digital-wallet">
-        <div className="w-80">
+        <div className="w-90">
           <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
           <h1 className="headings text-center customized-solutios-heading">
             {title}
           </h1>
-          <div className="d-flex gap-2">
+          <div className="d-flex gap-4">
             <div>
               <div className="card">
                 <div className="card-content">
@@ -24,10 +24,16 @@ const Featuredproject = ({
                   <p className="contents digital-wallet-content">
                     {digitalWallet.content}
                   </p>
-                  <a href="#" className="case-study">
-                    View Case Study <img src={Blackarrow} alt="" />
-                  </a>
-                  <img src={digitalWallet.img} alt="" />
+                  <div className="d-flex position-relative">
+                    <a href="#" className="case-study">
+                      View Case Study <img src={Blackarrow} alt="" />
+                    </a>
+                    <img
+                      src={digitalWallet.img}
+                      alt=""
+                      className="position-absolute digital-wallet-imgs"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -48,7 +54,7 @@ const Featuredproject = ({
           </div>
         </div>
       </div>
-      <div className="w-80">
+      <div className="w-90">
         <div className="gym-cloud">
           <div className="card">
             <div className="card-content">

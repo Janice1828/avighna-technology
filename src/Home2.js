@@ -18,7 +18,7 @@ const Home2 = () => {
           className="avighna-content-container"
           style={{ paddingTop: "30px" }}
         >
-          <div className="w-80 m-auto">
+          <div className="w-90 m-auto">
             <div>
               <Innovative />
               {/* <Trustedclients /> */}
