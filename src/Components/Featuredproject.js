@@ -16,37 +16,43 @@ const Featuredproject = ({
           <h1 className="headings text-center customized-solutios-heading">
             {title}
           </h1>
-          <div className="d-flex gap-4">
-            <div>
+          <div className="d-flex gap-4" style={{ flexWrap: "wrap" }}>
+            <div className="w-g-30">
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{digitalWallet.title}</h2>
-                  <p className="contents digital-wallet-content">
+                  <p className="contents digital-wallet-content mw-100">
                     {digitalWallet.content}
                   </p>
                   <div className="d-flex position-relative">
-                    <a href="#" className="case-study">
+                    <a
+                      href="#"
+                      className="case-study position-absolute"
+                      style={{ left: "-15px" }}
+                    >
                       View Case Study <img src={Blackarrow} alt="" />
                     </a>
                     <img
                       src={digitalWallet.img}
                       alt=""
-                      className="position-absolute digital-wallet-imgs"
+                      className="digital-wallet-imgs mw-100"
                     />
                   </div>
                 </div>
               </div>
             </div>
-            <div>
+            <div className="w-g-70">
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{paymor.title}</h2>
-                  <p className="contents paymor-content">{paymor.content}</p>
+                  <p className="contents paymor-content mw-100">
+                    {paymor.content}
+                  </p>
                   <div className="d-flex">
                     <a href="#" className="case-study">
                       View Case Study <img src={Blackarrow} alt="" />
                     </a>
-                    <img src={paymor.img} alt="" />
+                    <img src={paymor.img} className="mw-100" alt="" />
                   </div>
                 </div>
               </div>

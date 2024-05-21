@@ -30,10 +30,10 @@ const Customers = ({ mainTitle, title, content, data }) => {
   };
   return (
     <div className="customers-pink-bg">
-      <div className="w-50">
+      <div className="d-flex justify-content-center">
         <div className="customers position-relative">
           <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
-          <h1 className="headings text-center">{title}</h1>
+          <h1 className="headings text-center customer-heading">{title}</h1>
           <div className="d-flex align-items-center gap-3">
             <div>
               <img

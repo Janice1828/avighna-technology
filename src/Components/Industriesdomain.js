@@ -17,7 +17,7 @@ const Industriesdomain = ({ mainTitle, title, data }) => {
             alt=""
             style={{ height: "650px", objectFit: "cover" }}
           />
-          <div className="d-flex gap-4 mt-4">
+          <div className="d-flex gap-4 mt-4" style={{ flexWrap: "wrap" }}>
             {data.map((service) => (
               <p
                 className={`cursor-pointer services-lists ${

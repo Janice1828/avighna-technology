@@ -20,11 +20,13 @@ const Evolution = ({ heading, content, btnOne, btnTwo, img }) => {
           </a>
         </div>
       </div>
-      <div className="evolution-bg-img">
-        <img src={Webdesign} alt="" id="web-design" />
-        <img src={Webdevelopment} alt="" id="web-development" />
-        <img src={Softwaredevelopment} alt="" id="software-development" />
-        <img src={EvolutionBackground} alt="" id="background-img" />
+      <div className="d-flex justify-content-center">
+        <div className="evolution-bg-img">
+          <img src={Webdesign} alt="" id="web-design" />
+          <img src={Webdevelopment} alt="" id="web-development" />
+          <img src={Softwaredevelopment} alt="" id="software-development" />
+          <img src={EvolutionBackground} alt="" id="background-img" />
+        </div>
       </div>
     </div>
   );

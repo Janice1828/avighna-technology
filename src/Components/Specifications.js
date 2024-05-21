@@ -5,7 +5,7 @@ const Specifications = ({ mainTitle, title, data }) => {
     <div className="our-specifications">
       <h5 className="text-center">{mainTitle}</h5>
       <h1 className="text-center">{title}</h1>
-      <div className="d-flex specification-lists">
+      <div className="d-flex specification-lists justify-content-center">
         {data.map((item) => (
           <div className={item.class} key={item.id}>
             <img src={item.img} alt="" />

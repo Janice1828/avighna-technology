@@ -12,14 +12,16 @@ const Businessbuildingexperience = ({
   img,
 }) => {
   return (
-    <div className="business-building-experience d-flex">
-      <div>
-        <img src={img} alt="" />
+    <div className="business-building-experience d-flex gap-4">
+      <div className="w-g-50">
+        <img src={img} alt="" className="w-100" />
       </div>
-      <div>
+      <div className="w-g-50">
         <h5 id="about">{mainTitle}</h5>
         <h2 id="business-building-experience">{title}</h2>
-        <p id="business-building-content">{content}</p>
+        <p id="business-building-content" style={{ overflow: "hidden" }}>
+          {content}
+        </p>
         <div className="d-flex align-items-center gap-2">
           <div className="happy-customers-number d-flex align-items-center gap-1">
             <h1 id="happy-customer-count">{happyCustomerNumber}</h1>

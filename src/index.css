@@ -28,6 +28,9 @@
 .justify-content-center {
   justify-content: center;
 }
+.w-100 {
+  width: 100%;
+}
 .w-90 {
   width: 90%;
   margin: auto;
@@ -140,7 +143,6 @@ nav a {
   margin: auto;
   position: absolute;
   bottom: -3px;
-  left: 19%;
 }
 .evolution-bg-img #background-img {
   width: 100%;
@@ -288,7 +290,6 @@ nav a {
 .business-building-experience {
   padding: 120px 0px;
   flex-wrap: wrap;
-  gap: 40px;
 }
 .customized-solutios-heading {
   width: 560px;
@@ -359,7 +360,8 @@ nav a {
 }
 .specification-lists {
   padding-top: 70px;
-  gap: 50px;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 .succeed-projects,
 .happy-clients-counting {
@@ -369,6 +371,10 @@ nav a {
 .industries-domains {
   background-color: #000;
   color: #fff;
+}
+.customer-heading {
+  width: 580px;
+  margin: auto;
 }
 .industries-domains h1 {
   font-size: 48px;
@@ -429,6 +435,7 @@ footer {
   background-image: url(./images/conny-schneider-xuTJZ7uD7PI-unsplash1.png);
   height: 526px;
   color: #fff;
+  background-size: cover;
 }
 .footer-content {
   width: 90%;
@@ -533,7 +540,7 @@ footer ul {
   padding-bottom: 20px;
 }
 .card {
-  padding: 40px 30px 10px 30px;
+  padding: 40px 40px 10px 40px;
   background-color: #f2f5f9;
   border-radius: 20px;
   border: 1px solid #c1c8cd;
@@ -660,4 +667,19 @@ footer ul li a:hover {
 .innovative-see-our-work-btn:hover {
   transition: 0.4s;
   transform: scale(1.1);
+}
+.w-g-50 {
+  width: calc(50% - 40px);
+}
+.w-33 {
+  width: 33.33%;
+}
+.w-g-30 {
+  width: calc(30% - 20px);
+}
+.w-g-70 {
+  width: calc(70% - 20px);
+}
+.mw-100 {
+  max-width: 100%;
 }
