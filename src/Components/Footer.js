@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="company-details d-flex justify-content-between">
           <div>
-            <img src={Footerlogo} alt="" />
+            <img src={Footerlogo} alt="" className="mw-100" />
             <h5 id="company-address">Kupondole, Lalitpur, Nepal</h5>
             <p id="email">info@avighnatechnology.com</p>
             <p id="contact-no">980113860/81/82/84</p>

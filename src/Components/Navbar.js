@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <nav className="w-90 m-auto d-flex justify-content-between align-items-center">
       <div className="avighna-nav-logo">
-        <img src={Logo} alt="Avighna Logo" />
+        <img src={Logo} className="cursor-pointer" alt="Avighna Logo" />
       </div>
-      <div className="d-flex align-items-center gap-2 nav-link">
+      <div className="d-flex align-items-center gap-2 nav-links">
         <Link to="#" className="text-decoration-none nav-link">
           Home
         </Link>

@@ -295,10 +295,12 @@ nav a {
 }
 .gym-cloud-content {
   width: 660px;
+  max-width: 100%;
 }
 .business-building-experience {
   padding: 120px 0px;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 .customized-solutios-heading {
   width: 570px;
@@ -336,6 +338,10 @@ nav a {
   font-weight: 500;
   line-height: 57.6px;
   padding-top: 10px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .succeed-projects h3,
 .happy-clients-counting h3,
@@ -424,7 +430,7 @@ nav a {
   margin: 120px 0px;
 }
 .cta-section {
-  width: 1028px;
+  width: 65%;
   margin: auto;
 }
 .cta-section-bg-img h5 {
@@ -612,6 +618,12 @@ dialog {
 .owl-carousel .owl-item img {
   width: 85% !important;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.owl-carousel .owl-item img:hover {
+  opacity: 1;
+  transition: 0.4s;
 }
 .owl-nav,
 .owl-dots {
@@ -689,4 +701,207 @@ footer ul li a:hover {
 }
 .mw-100 {
   max-width: 100%;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1200px) {
+  .evolution-bg-img #background-img {
+    width: 70%;
+  }
+  .business-building-experience {
+    justify-content: center;
+    padding: 100px 0px;
+  }
+  .specification-lists {
+    row-gap: 50px;
+  }
+  .industries-domains {
+    margin: 100px 0px;
+  }
+  .trusted-clients h4 {
+    width: 100%;
+  }
+  #web-development {
+    right: 18px;
+    top: 83px;
+    height: 40px;
+  }
+  #software-development {
+    left: 18px;
+    height: 40px;
+  }
+  #web-design {
+    left: 115px;
+    height: 40px;
+    top: -48px;
+  }
+  .evolution {
+    height: 862px;
+  }
+  .evolution-background-content {
+    height: 785px;
+  }
+  .trusted-clients {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .trusted-clients h4 {
+    text-align: center;
+  }
+  .digital-wallet-paymor {
+    flex-direction: column;
+  }
+  .trusted-companies-logos img {
+    height: 27px;
+  }
+  .paymor-card {
+    width: 100%;
+  }
+  .digital-wallet-card {
+    width: 100%;
+  }
+  .paymor-case-study {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 850px) {
+  nav {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  #trusted-companies-content {
+    max-width: 500px;
+  }
+  .evolution {
+    height: 798px;
+  }
+  .evolution-background-content {
+    height: 720px;
+  }
+  #web-development,
+  #web-design,
+  #software-development {
+    height: 30px;
+  }
+  #project-in-mind {
+    text-align: center;
+  }
+  .company-details {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+@media only screen and (max-width: 705px) {
+  .evolution {
+    height: 670px;
+  }
+  #software-development {
+    bottom: 74px;
+  }
+  #web-design {
+    top: -32px;
+    left: 100px;
+  }
+  #web-development {
+    top: 61px;
+  }
+  .evolution-background-content {
+    height: 615px;
+  }
+  .evolution-background-content h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .evolution-text-content {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .evolution-text-content,
+  #business-building-content {
+    width: 70%;
+  }
+  .headings,
+  #business-building-experience,
+  .industries-domains h1 {
+    width: 90%;
+  }
+  .customer-project-counter {
+    flex-direction: column;
+  }
+  .evolution-background-content h1 {
+    width: 90%;
+  }
+  .clients-logos-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .trusted-clients h4 {
+    font-size: 20px;
+  }
+  #business-building-experience,
+  .our-specifications h1,
+  .headings,
+  .industries-domains h1,
+  .cta-section-bg-img h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #happy-customer-count,
+  .project-completed-number h1 {
+    font-size: 50px;
+  }
+  .industries-domains-img p {
+    font-size: 18px;
+  }
+  .sub-heading {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .evolution-background-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  #business-building-experience,
+  .our-specifications h1,
+  .headings,
+  .industries-domains h1,
+  .cta-section-bg-img h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .nav-links {
+    flex-wrap: wrap;
+  }
+  .succeed-projects {
+    padding-right: 0px;
+  }
+  .succeed-projects h3,
+  .happy-clients-counting h3,
+  .our-presence h3 {
+    width: 90%;
+  }
+  .succeed-projects p,
+  .happy-clients-counting p,
+  .our-presence p {
+    width: 90%;
+  }
+  .avighna-technologies-ceo-signature {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .happy-customers-number,
+  .project-completed-number {
+    flex-direction: column;
+  }
 }

@@ -10,8 +10,11 @@ const Innovative = ({ title, content, img }) => {
     <>
       <div className="innvotive-intuitive">
         <div>
-          <div className="d-flex" style={{ flexWrap: "wrap" }}>
-            <div className="w-50">
+          <div
+            className="d-flex justify-content-between"
+            style={{ flexWrap: "wrap" }}
+          >
+            <div className="">
               <h1>
                 {colorTitle.map((item, id) => (
                   <span
@@ -34,7 +37,7 @@ const Innovative = ({ title, content, img }) => {
                 </a>
               </div>
             </div>
-            <div className="w-50">
+            <div className="">
               <img src={img} style={{ maxWidth: "100%" }} />
             </div>
           </div>

@@ -17,11 +17,11 @@ const Businessbuildingexperience = ({
     setBusinessTitle(titleArr);
   }, []);
   return (
-    <div className="business-building-experience d-flex gap-4">
-      <div className="w-g-50">
-        <img src={img} alt="" className="w-100" />
+    <div className="business-building-experience d-flex justify-content-between">
+      <div className="">
+        <img src={img} alt="" className="mw-100" />
       </div>
-      <div className="w-g-50">
+      <div className="">
         <h5 id="about">{mainTitle}</h5>
         <h2 id="business-building-experience">
           {businessTitle.map((item, id) => (
@@ -38,7 +38,7 @@ const Businessbuildingexperience = ({
         <p id="business-building-content" style={{ overflow: "hidden" }}>
           {content}
         </p>
-        <div className="d-flex align-items-center gap-2">
+        <div className="d-flex align-items-center gap-2 customer-project-counter">
           <div className="happy-customers-number d-flex align-items-center gap-1">
             <h1 id="happy-customer-count">{happyCustomerNumber}</h1>
             <h5>

@@ -32,8 +32,11 @@ const Featuredproject = ({
               </span>
             ))}
           </h1>
-          <div className="d-flex gap-4" style={{ flexWrap: "wrap" }}>
-            <div className="w-g-30">
+          <div
+            className="d-flex gap-4 digital-wallet-paymor"
+            style={{ flexWrap: "wrap" }}
+          >
+            <div className="w-g-30 digital-wallet-card">
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{digitalWallet.title}</h2>
@@ -57,14 +60,14 @@ const Featuredproject = ({
                 </div>
               </div>
             </div>
-            <div className="w-g-70">
+            <div className="w-g-70 paymor-card">
               <div className="card">
                 <div className="card-content">
                   <h2 className="sub-heading">{paymor.title}</h2>
                   <p className="contents paymor-content mw-100">
                     {paymor.content}
                   </p>
-                  <div className="d-flex">
+                  <div className="d-flex paymor-case-study">
                     <a href="#" className="case-study">
                       View Case Study <img src={Blackarrow} alt="" />
                     </a>
@@ -87,7 +90,7 @@ const Featuredproject = ({
                 <img src={Blackarrow} alt="" />
               </p>
               <div className="d-flex justify-content-center">
-                <img src={gymcloud.img} alt="" />
+                <img src={gymcloud.img} alt="" className="mw-100" />
               </div>
             </div>
           </div>

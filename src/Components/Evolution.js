@@ -35,7 +35,7 @@ const Evolution = ({ heading, content, btnOne, btnTwo, img }) => {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <div className="evolution-bg-img">
+        <div className="evolution-bg-img d-flex justify-content-center">
           <img src={Webdesign} alt="" id="web-design" />
           <img src={Webdevelopment} alt="" id="web-development" />
           <img src={Softwaredevelopment} alt="" id="software-development" />
