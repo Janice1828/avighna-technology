@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Blackarrow from "../images/black_arrow.png";
 
 const Featuredproject = ({
@@ -8,13 +8,29 @@ const Featuredproject = ({
   gymcloud,
   digitalWallet,
 }) => {
+  const [colorTitle, setColorTitle] = useState([]);
+  useEffect(() => {
+    const colorArr = title.split(" ");
+    setColorTitle(colorArr);
+  }, []);
   return (
     <>
       <div className="digital-wallet">
         <div className="w-90">
           <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
           <h1 className="headings text-center customized-solutios-heading">
-            {title}
+            {colorTitle.map((item, id) => (
+              <span
+                key={id}
+                className={
+                  id === 6 || id === 7 || id === 8 || id === 9
+                    ? "text-blue"
+                    : " "
+                }
+              >
+                {item}&nbsp;
+              </span>
+            ))}
           </h1>
           <div className="d-flex gap-4" style={{ flexWrap: "wrap" }}>
             <div className="w-g-30">

@@ -30,7 +30,7 @@ const Customersdata = {
     },
   ],
   mainTitle: "Customers",
-  title: "Trusted By Thousand For Companies & Individuals",
+  title: "Trusted By Thousand For Companies & Individuals.",
   content:
     "“Lorem ipsum dolor sit amet consectetur. Adipiscing ut nisi leo nibh eros in. Sed nulla quis scelerisque vitae. Fringilla massa facilisis non mattis mauris nisl. Dui ut hendrerit fames imperdiet proin nisl sit mauris.”",
 };

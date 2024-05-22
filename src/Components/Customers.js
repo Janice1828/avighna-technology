@@ -28,12 +28,23 @@ const Customers = ({ mainTitle, title, content, data }) => {
       setCustomerData(newData);
     }
   };
+  const [colorTitle, setColorTitle] = useState([]);
+  useEffect(() => {
+    const colorArr = title.split(" ");
+    setColorTitle(colorArr);
+  }, []);
   return (
     <div className="customers-pink-bg">
       <div className="d-flex justify-content-center">
         <div className="customers position-relative">
           <h5 className="sub-sub-heading text-center">{mainTitle}</h5>
-          <h1 className="headings text-center customer-heading">{title}</h1>
+          <h1 className="headings text-center customer-heading">
+            {colorTitle.map((item, id) => (
+              <span key={id} className={id === 0 ? "text-blue" : " "}>
+                {item}&nbsp;
+              </span>
+            ))}
+          </h1>
           <div className="d-flex align-items-center gap-3">
             <div>
               <img

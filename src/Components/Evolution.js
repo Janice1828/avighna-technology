@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Webdesign from "../images/Floating Element (2).png";
 import EvolutionBackground from "../images/charlesdeluvio-Lks7vei-eAg-unsplash 1.png";
 import Softwaredevelopment from "../images/Floating Element (1).png";
@@ -6,10 +6,24 @@ import Webdevelopment from "../images/Floating Element.png";
 import Arrowicon from "../images/tabler-icon-arrow-up-right.png";
 
 const Evolution = ({ heading, content, btnOne, btnTwo, img }) => {
+  const [title, setTitle] = useState([]);
+  useEffect(() => {
+    const titleArr = heading.split(" ");
+    setTitle(titleArr);
+  }, []);
   return (
     <div className="evolution">
       <div className="evolution-background-content">
-        <h1 className="text-center">{heading}</h1>
+        <h1 className="text-center">
+          {title.map((item, id) => (
+            <span
+              key={id}
+              className={id === 1 || id === 2 ? "evolution-text-blue" : " "}
+            >
+              {item}&nbsp;
+            </span>
+          ))}
+        </h1>
         <p className="text-center evolution-text-content">{content}</p>
         <div className="d-flex evolution-btns">
           <a href="#" className="learn-more-btn">

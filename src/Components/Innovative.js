@@ -1,26 +1,30 @@
-import React from "react";
-import Rightcol from "../images/Right-col.png";
+import React, { useEffect, useState } from "react";
 import Blackarrow from "../images/black_arrow.png";
-const Innovative = () => {
+const Innovative = ({ title, content, img }) => {
+  const [colorTitle, setColorTitle] = useState([]);
+  useEffect(() => {
+    const titleArr = title.split(" ");
+    setColorTitle(titleArr);
+  }, []);
   return (
     <>
       <div className="innvotive-intuitive">
         <div>
-          <div className="d-flex">
-            <div>
+          <div className="d-flex" style={{ flexWrap: "wrap" }}>
+            <div className="w-50">
               <h1>
-                Delivering
-                <span>
-                  <br /> Innovative & <br /> Intuitive
-                </span>
-                &nbsp;Digital
-                <br /> Experiences
+                {colorTitle.map((item, id) => (
+                  <span
+                    key={id}
+                    className={
+                      id === 1 || id === 2 || id === 3 ? "text-blue" : " "
+                    }
+                  >
+                    {item}&nbsp;
+                  </span>
+                ))}
               </h1>
-              <p id="innvotive-intuitive-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus, luctus nec.Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Ut elit tellus, luctus nec.
-              </p>
+              <p id="innvotive-intuitive-content">{content}</p>
               <div className="btn-groups gap-4 d-flex align-items-center">
                 <a href="#" className="innovative-learn-more-btn">
                   Learn More
@@ -30,8 +34,8 @@ const Innovative = () => {
                 </a>
               </div>
             </div>
-            <div>
-              <img src={Rightcol} />
+            <div className="w-50">
+              <img src={img} style={{ maxWidth: "100%" }} />
             </div>
           </div>
         </div>

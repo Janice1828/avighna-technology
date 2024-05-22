@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Businessbuildingexperience = ({
   mainTitle,
@@ -11,6 +11,11 @@ const Businessbuildingexperience = ({
   ceoName,
   img,
 }) => {
+  const [businessTitle, setBusinessTitle] = useState([]);
+  useState(() => {
+    const titleArr = title.split(" ");
+    setBusinessTitle(titleArr);
+  }, []);
   return (
     <div className="business-building-experience d-flex gap-4">
       <div className="w-g-50">
@@ -18,7 +23,18 @@ const Businessbuildingexperience = ({
       </div>
       <div className="w-g-50">
         <h5 id="about">{mainTitle}</h5>
-        <h2 id="business-building-experience">{title}</h2>
+        <h2 id="business-building-experience">
+          {businessTitle.map((item, id) => (
+            <span
+              key={id}
+              className={
+                id === 1 || id === 2 || id === 3 || id === 4 ? "text-blue" : " "
+              }
+            >
+              {item}&nbsp;
+            </span>
+          ))}
+        </h2>
         <p id="business-building-content" style={{ overflow: "hidden" }}>
           {content}
         </p>

@@ -110,10 +110,8 @@ nav a {
 }
 .quote {
   z-index: -1;
-  z-index: -1;
-  top: -29px;
-  left: 232px;
-  width: 75px;
+  top: -49px;
+  left: 126px;
 }
 #ceogrey {
   filter: grayscale(100%);
@@ -219,7 +217,16 @@ nav a {
   font-size: 64px;
   line-height: 76.8px;
   font-weight: 600;
-  width: 525px;
+  width: 554px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.evolution-text-blue {
+  color: #beeeff;
+}
+.text-blue {
+  color: var(--blue-color);
 }
 .trusted-clients {
   margin-top: 50px;
@@ -244,9 +251,11 @@ nav a {
   color: #686f76;
 }
 #business-building-experience {
-  gap: 25px;
-  width: 510px;
+  width: 520px;
   font-size: 48px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   font-weight: 500;
   line-height: 57.6px;
   padding: 10px 0px 30px 0px;
@@ -292,7 +301,7 @@ nav a {
   flex-wrap: wrap;
 }
 .customized-solutios-heading {
-  width: 560px;
+  width: 570px;
   text-align: center;
   margin: auto;
 }
@@ -327,9 +336,6 @@ nav a {
   font-weight: 500;
   line-height: 57.6px;
   padding-top: 10px;
-}
-.our-specifications h1 span {
-  color: var(--blue-color);
 }
 .succeed-projects h3,
 .happy-clients-counting h3,
@@ -373,14 +379,17 @@ nav a {
   color: #fff;
 }
 .customer-heading {
-  width: 580px;
+  width: 590px;
   margin: auto;
 }
 .industries-domains h1 {
   font-size: 48px;
   font-weight: 500;
+  width: 500px;
+  flex-wrap: wrap;
   padding: 10px 0px 60px 0px;
   line-height: 57.6px;
+  margin: auto;
 }
 .industries-domains-img p {
   font-size: 20px;
@@ -389,9 +398,6 @@ nav a {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
-}
-.industries-domains h1 span {
-  color: #beeeff;
 }
 .industries-domains-img {
   margin-bottom: 35px;
@@ -492,10 +498,12 @@ footer ul {
   color: #686f76;
 }
 .headings {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 48px;
-  /* font-size: 48px; */
   font-weight: 500;
-  padding: 10px 0px 50px 0px;
+  padding: 10px 0px 70px 0px;
   line-height: 57.6px;
 }
 .sub-heading {
@@ -515,6 +523,7 @@ footer ul {
   color: #686f76;
   padding-top: 5px;
   padding-bottom: 25px;
+  width: 120px;
 }
 #customers-ceo-name {
   font-size: 16px;
@@ -528,13 +537,10 @@ footer ul {
   text-decoration: none;
   z-index: 1;
 }
-.headings span {
-  color: var(--blue-color);
-}
 .digital-wallet {
   background-image: url(./images/Mesh\ gradeint\ bg\ 1.png);
-  padding-bottom: 50px;
-  background-position: top;
+  padding-bottom: 40px;
+  background-position: -15px -138px;
 }
 .pb-2 {
   padding-bottom: 20px;
@@ -575,16 +581,17 @@ footer ul {
   background-position: center;
   padding-top: 120px;
 }
-.innvotive-intuitive h1 span {
-  color: var(--blue-color);
-}
+
 .innvotive-intuitive h1 {
   font-size: 64px;
   line-height: 76.8px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 490px;
 }
 
 #innvotive-intuitive-content {
-  padding: 20px 0px 40px 0px;
+  padding: 30px 0px 40px 0px;
   line-height: 25.6px;
   color: #686f76;
   width: 480px;
