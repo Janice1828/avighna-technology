@@ -27,8 +27,10 @@ const Innovative = ({ title, content, img }) => {
                   </span>
                 ))}
               </h1>
-              <p id="innvotive-intuitive-content">{content}</p>
-              <div className="btn-groups gap-4 d-flex align-items-center">
+              <p id="innvotive-intuitive-content" className="mw-100">
+                {content}
+              </p>
+              <div className="btn-groups innovative-inituitive-btns gap-4 d-flex align-items-center">
                 <a href="#" className="innovative-learn-more-btn">
                   Learn More
                 </a>

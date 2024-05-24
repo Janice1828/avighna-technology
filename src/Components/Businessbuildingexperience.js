@@ -17,7 +17,7 @@ const Businessbuildingexperience = ({
     setBusinessTitle(titleArr);
   }, []);
   return (
-    <div className="business-building-experience d-flex justify-content-between">
+    <div className="business-building-experience d-flex">
       <div className="">
         <img src={img} alt="" className="mw-100" />
       </div>

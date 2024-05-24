@@ -273,6 +273,7 @@ nav a {
 }
 .avighna-technologies-ceo-signature {
   padding-top: 30px;
+  align-items: flex-start;
 }
 #happy-customer-count,
 .project-completed-number h1 {
@@ -299,8 +300,8 @@ nav a {
 }
 .business-building-experience {
   padding: 120px 0px;
-  flex-wrap: wrap;
   row-gap: 20px;
+  gap: 30px;
 }
 .customized-solutios-heading {
   width: 570px;
@@ -445,13 +446,14 @@ nav a {
 footer {
   background-color: var(--blue-color);
   background-image: url(./images/conny-schneider-xuTJZ7uD7PI-unsplash1.png);
-  height: 526px;
+  /* height: 526px; */
   color: #fff;
   background-size: cover;
 }
 .footer-content {
   width: 90%;
   margin: auto;
+  padding: 100px 0px;
 }
 .company-details {
   border-top: 2px solid #fff;
@@ -703,12 +705,30 @@ footer ul li a:hover {
   max-width: 100%;
 }
 /* Responsive Design */
+@media only screen and (min-width: 1600px) {
+  .business-building-experience {
+    justify-content: space-between;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .evolution-bg-img #background-img {
     width: 70%;
   }
+  #trusted-companies-content {
+    line-height: 33.4px;
+    font-size: 20px;
+    width: 550px;
+  }
+  .digital-wallet-content,
+  .paymor-content {
+    width: 100%;
+  }
+  .clients-logos-heading {
+    width: 50%;
+  }
   .business-building-experience {
     justify-content: center;
+    flex-direction: column;
     padding: 100px 0px;
   }
   .specification-lists {
@@ -764,11 +784,14 @@ footer ul li a:hover {
   .paymor-case-study {
     flex-direction: column;
   }
+  .cta-section-bg-img {
+    margin: 100px 0px;
+  }
 }
 @media only screen and (max-width: 850px) {
   nav {
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 25px;
   }
   #trusted-companies-content {
     max-width: 500px;
@@ -795,10 +818,29 @@ footer ul li a:hover {
     flex-wrap: wrap;
     row-gap: 20px;
   }
+  #trusted-companies-content {
+    line-height: 30px;
+    font-size: 18px;
+    width: 399px;
+  }
 }
 @media only screen and (max-width: 705px) {
   .evolution {
     height: 670px;
+  }
+  #trusted-companies-content {
+    line-height: 26px;
+    font-size: 16px;
+    width: 344px;
+  }
+
+  .industries-domains,
+  .cta-section-bg-img {
+    margin: 70px 0px;
+  }
+  .industries-domains,
+  .business-building-experience {
+    padding: 70px 0px;
   }
   #software-development {
     bottom: 74px;
@@ -813,28 +855,68 @@ footer ul li a:hover {
   .evolution-background-content {
     height: 615px;
   }
-  .evolution-background-content h1 {
+  .evolution-background-content h1,
+  .innvotive-intuitive h1 {
     font-size: 48px;
     line-height: 56px;
   }
   .evolution-text-content {
     font-size: 16px;
   }
+  #business-building-experience,
+  .our-specifications h1,
+  .industries-domains h1,
+  .headings,
+  .cta-section-bg-img h1 {
+    font-size: 44px;
+  }
+  #business-building-experience {
+    padding: 10px 0px 20px 0px;
+  }
+  #happy-customer-count,
+  .project-completed-number h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .evolution-text-content,
   #business-building-content {
-    width: 70%;
+    width: 80%;
+  }
+  .slider-lists {
+    justify-content: center;
+  }
+  #trusted-companies-content {
+    width: 210px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .customers .userImg {
+    height: 100px;
+  }
+  .customer-details {
+    gap: 10px;
+  }
+  .slider-lists p {
+    width: 45px;
+  }
+  .contents {
+    padding-bottom: 10px;
+  }
+  .industries-domains-img img {
+    height: 600px;
   }
   .headings,
   #business-building-experience,
   .industries-domains h1 {
     width: 90%;
   }
-  .customer-project-counter {
-    flex-direction: column;
+  .specification-lists {
+    padding-top: 50px;
   }
-  .evolution-background-content h1 {
+  .evolution-background-content h1,
+  .innvotive-intuitive h1 {
     width: 90%;
   }
   .clients-logos-heading {
@@ -863,27 +945,171 @@ footer ul li a:hover {
   .sub-heading {
     font-size: 27px;
   }
+  #web-development,
+  #web-design,
+  #software-development {
+    height: 25px;
+  }
+  .digital-wallet {
+    background-position: -152px -80px;
+  }
+  #software-development {
+    bottom: 65px;
+  }
+  #web-development {
+    top: 39px;
+  }
+  .quote {
+    top: -24px;
+    left: 127px;
+    height: 50px;
+  }
+  .trusted-companies-logos img {
+    height: 21px;
+  }
+  .cta-section-bg-img {
+    height: 400px;
+  }
+  .companies-logo {
+    width: 90%;
+  }
+  .digital-wallet {
+    background-position: -40px -80px;
+  }
+  .owl-carousel .owl-item img {
+    height: 25px;
+  }
+  .owl-item {
+    margin-right: 8px !important;
+  }
 }
 @media only screen and (max-width: 500px) {
-  .evolution-background-content h1 {
-    font-size: 40px;
+  .evolution-background-content h1,
+  .innvotive-intuitive h1 {
+    font-size: 35px;
     line-height: 50px;
+  }
+  .quote {
+    top: 179px;
+    left: -13px;
+  }
+  .cta-section-bg-img {
+    height: 350px;
+  }
+  .cta-section {
+    width: 80%;
+  }
+  .digital-wallet {
+    background-position: -199px -80px;
+  }
+  .industries-domains-img img {
+    height: 450px;
+  }
+  .trusted-clients {
+    margin-top: 30px;
+  }
+  .customer-project-counter {
+    flex-direction: column;
+    align-items: flex-start;
   }
   #business-building-experience,
   .our-specifications h1,
-  .headings,
   .industries-domains h1,
+  .headings,
   .cta-section-bg-img h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #happy-customer-count,
+  .project-completed-number h1 {
     font-size: 35px;
-    line-height: 45px;
+  }
+  .sub-heading {
+    font-size: 25px;
+  }
+  .evolution {
+    height: 570px;
+  }
+  .evolution-background-content {
+    height: 545px;
+    padding: 50px 0px;
+  }
+  #software-development {
+    bottom: 50px;
+    width: 80px;
+  }
+  #business-building-experience {
+    padding: 10px 0px 15px 0px;
+  }
+  #web-development {
+    width: 70px;
+  }
+  .customers-carousel {
+    gap: 20px;
+  }
+  .customer-details {
+    flex-direction: column;
+  }
+  #business-building-content {
+    padding-bottom: 20px;
+  }
+  .innovative-inituitive-btns {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .avighna-technologies-ceo-signature {
+    padding-top: 5px;
+  }
+  #innvotive-intuitive-content {
+    width: 90%;
+    /* text-align: center; */
+  }
+  .clients-logos-heading {
+    width: 65%;
+  }
+  .industries-domains-img p {
+    font-size: 16px;
+  }
+  .learn-more-btn {
+    padding: 5px 18px;
+  }
+  #web-design {
+    left: 64px;
+  }
+  #web-development,
+  #web-design,
+  #software-development {
+    height: 23px;
+  }
+  .evolution-text-content {
+    margin: 20px 0px 35px 0px;
+  }
+  .paymor-case-study a {
+    margin-bottom: 10px;
+  }
+  .case-study {
+    left: 0px;
   }
 }
 @media only screen and (max-width: 400px) {
   .nav-links {
     flex-wrap: wrap;
   }
+  .company-details {
+    row-gap: 40px;
+  }
+  .industries-domains-img img {
+    height: 350px;
+  }
+  .cta-section {
+    width: 90%;
+  }
   .succeed-projects {
     padding-right: 0px;
+  }
+  .carousel-arrow {
+    height: 15px;
   }
   .succeed-projects h3,
   .happy-clients-counting h3,
@@ -898,10 +1124,115 @@ footer ul li a:hover {
   .avighna-technologies-ceo-signature {
     flex-direction: column;
   }
+  .evolution-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .evolution-text-content {
+    margin: 30px 0px 30px 0px;
+  }
+  .evolution {
+    height: 510px;
+  }
+  #web-development {
+    right: 5px;
+    top: 25px;
+    width: 66px;
+    height: 22px;
+  }
+  #web-design {
+    left: 35px;
+  }
+  #software-development {
+    width: 60px;
+    height: 19px;
+    bottom: 38px;
+  }
+  .evolution-background-content {
+    border-radius: 20px;
+    height: 495px;
+  }
+  .evolution-background-content h1,
+  .innvotive-intuitive h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .succeed-projects h3,
+  .happy-clients-counting h3,
+  .our-presence h3 {
+    font-size: 21px;
+  }
+  .digital-wallet-paymor {
+    gap: 30px !important;
+  }
+  .contents {
+    padding-bottom: 10px;
+  }
+  #innotive-ini
 }
 @media only screen and (max-width: 300px) {
-  .happy-customers-number,
-  .project-completed-number {
+  .cta-section-bg-img {
+    height: 300px;
+  }
+  .digital-wallet {
+    background-position: -274px -10px;
+  }
+  .case-study {
+    position: relative;
+    left: 0px !important;
+  }
+  #trusted-companies-content {
+    width: 165px;
+  }
+  .card {
+    padding: 20px 20px 10px 20px;
+  }
+  .industries-domains-img img {
+    height: 300px;
+  }
+  .card .d-flex {
     flex-direction: column;
+    gap: 10px;
+  }
+  .gym-cloud-content .pb-2 {
+    padding: 0px;
+  }
+  .clients-logos-heading {
+    width: 90%;
+  }
+  .evolution-background-content h1,
+  .innvotive-intuitive h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .evolution {
+    height: 510px;
+  }
+  .evolution-background-content {
+    height: 495px;
+  }
+}
+@media only screen and (max-width: 318px) {
+  .evolution {
+    height: 539px;
+  }
+  .evolution-background-content {
+    height: 513px;
+  }
+}
+@media only screen and (max-width: 285px) {
+  .evolution-background-content {
+    height: 490px;
+  }
+  .evolution {
+    height: 505px;
+  }
+}
+@media only screen and (max-width: 279px) {
+  .evolution {
+    height: 515px;
+  }
+  .evolution-background-content {
+    height: 500px;
   }
 }
