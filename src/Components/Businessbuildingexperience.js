@@ -19,7 +19,7 @@ const Businessbuildingexperience = ({
   return (
     <div className="business-building-experience d-flex">
       <div className="">
-        <img src={img} alt="" className="mw-100" />
+        <img src={img} alt="" className="mw-100 about-img" />
       </div>
       <div className="">
         <h5 id="about">{mainTitle}</h5>

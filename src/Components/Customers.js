@@ -3,8 +3,9 @@ import Quote from "../images/ci_double-quotes-l.png";
 import Leftarrow from "../images/left-arrow.png";
 import Rightarrow from "../images/right-arrow.png";
 const Customers = ({ mainTitle, title, content, data }) => {
-  const [customerData, setCustomerData] = useState(data[0]);
+  // console.log("asd");
 
+  const [customerData, setCustomerData] = useState(data[0]);
   const displayCustomers = (id) => {
     function findId(num) {
       if (num.id == id) {
@@ -14,17 +15,20 @@ const Customers = ({ mainTitle, title, content, data }) => {
     const newdata = data.find(findId);
     setCustomerData(newdata);
   };
-  const previousData = () => {
-    const currentDataInd = data.indexOf(customerData);
-    if (currentDataInd >= 1) {
-      const newData = data[currentDataInd - 1];
-      setCustomerData(newData);
-    }
-  };
+
+  const [carouselRightArrow, setCarouselRightArrow] = useState("d-block");
+  const [carouselLeftArrow, setCarouselLeftArrow] = useState("d-block");
   const nextData = () => {
     const currentDataInd = data.indexOf(customerData);
     if (currentDataInd < data.length - 1) {
       const newData = data[currentDataInd + 1];
+      setCustomerData(newData);
+    }
+  };
+  const previousData = () => {
+    const currentDataInd = data.indexOf(customerData);
+    if (currentDataInd >= 1) {
+      const newData = data[currentDataInd - 1];
       setCustomerData(newData);
     }
   };
@@ -33,6 +37,17 @@ const Customers = ({ mainTitle, title, content, data }) => {
     const colorArr = title.split(" ");
     setColorTitle(colorArr);
   }, []);
+  useEffect(() => {
+    const currentDataInd = data.indexOf(customerData);
+    if (currentDataInd == 0) {
+      setCarouselLeftArrow("d-none");
+    } else {
+      setCarouselLeftArrow("d-block");
+    }
+    currentDataInd == data.length - 1
+      ? setCarouselRightArrow("d-none")
+      : setCarouselRightArrow("d-block");
+  }, [customerData]);
   return (
     <div className="customers-pink-bg">
       <div className="d-flex justify-content-center">
@@ -50,7 +65,7 @@ const Customers = ({ mainTitle, title, content, data }) => {
               <img
                 src={Leftarrow}
                 alt=""
-                className="carousel-arrow left-carousel-arrow"
+                className={`carousel-arrow left-carousel-arrow ${carouselLeftArrow}`}
                 onClick={() => {
                   previousData();
                 }}
@@ -90,7 +105,7 @@ const Customers = ({ mainTitle, title, content, data }) => {
               <img
                 src={Rightarrow}
                 alt=""
-                className="carousel-arrow"
+                className={`carousel-arrow ${carouselRightArrow}`}
                 onClick={() => {
                   nextData();
                 }}

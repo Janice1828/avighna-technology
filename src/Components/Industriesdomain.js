@@ -28,12 +28,11 @@ const Industriesdomain = ({ mainTitle, title, data }) => {
           ))}
         </h1>
         <div className="industries-domains-img d-flex justify-content-center flex-column">
-          <img
-            src={serviceImg.img}
-            alt=""
-            style={{ height: "650px", objectFit: "cover" }}
-          />
-          <div className="d-flex gap-4 mt-4" style={{ flexWrap: "wrap" }}>
+          <img src={serviceImg.img} alt="" style={{ objectFit: "contain" }} />
+          <div
+            className="d-flex services-gap mt-4"
+            style={{ flexWrap: "wrap" }}
+          >
             {data.map((service) => (
               <p
                 className={`cursor-pointer services-lists ${

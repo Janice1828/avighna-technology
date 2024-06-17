@@ -275,6 +275,12 @@ nav a {
   padding-top: 30px;
   align-items: flex-start;
 }
+.d-block {
+  display: block;
+}
+.d-none {
+  display: none;
+}
 #happy-customer-count,
 .project-completed-number h1 {
   font-weight: 400;
@@ -374,7 +380,7 @@ nav a {
 .specification-lists {
   padding-top: 70px;
   flex-wrap: wrap;
-  row-gap: 30px;
+  row-gap: 50px;
 }
 .succeed-projects,
 .happy-clients-counting {
@@ -612,6 +618,9 @@ footer ul {
   position: fixed;
   top: 0;
 }
+.services-gap {
+  gap: 40px;
+}
 dialog {
   position: absolute;
   top: 40%;
@@ -704,6 +713,19 @@ footer ul li a:hover {
 .mw-100 {
   max-width: 100%;
 }
+.toggle-btn {
+  display: none;
+}
+#nav-toggle-btn {
+  height: 20px;
+  /* width: 30px; */
+  background: transparent;
+  border: 0px;
+  outline: none;
+}
+#nav-toggle-btn img {
+  height: 100%;
+}
 /* Responsive Design */
 @media only screen and (min-width: 1600px) {
   .business-building-experience {
@@ -765,6 +787,9 @@ footer ul li a:hover {
     justify-content: center;
     align-items: center;
     gap: 20px;
+  }
+  .about-img {
+    width: 100%;
   }
   .trusted-clients h4 {
     text-align: center;
@@ -904,9 +929,6 @@ footer ul li a:hover {
   .contents {
     padding-bottom: 10px;
   }
-  .industries-domains-img img {
-    height: 600px;
-  }
   .headings,
   #business-building-experience,
   .industries-domains h1 {
@@ -1002,9 +1024,7 @@ footer ul li a:hover {
   .digital-wallet {
     background-position: -199px -80px;
   }
-  .industries-domains-img img {
-    height: 450px;
-  }
+
   .trusted-clients {
     margin-top: 30px;
   }
@@ -1091,16 +1111,38 @@ footer ul li a:hover {
   .case-study {
     left: 0px;
   }
+  .services-gap {
+    gap: 30px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .nav-links {
-    flex-wrap: wrap;
+    display: none;
+  }
+  .services-gap {
+    gap: 20px;
+  }
+  .selected {
+    padding-top: 3px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .nav-links-responsive {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .nav-toggle {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .toggle-btn {
+    display: block;
   }
   .company-details {
     row-gap: 40px;
-  }
-  .industries-domains-img img {
-    height: 350px;
   }
   .cta-section {
     width: 90%;
@@ -1168,7 +1210,6 @@ footer ul li a:hover {
   .contents {
     padding-bottom: 10px;
   }
-  #innotive-ini
 }
 @media only screen and (max-width: 300px) {
   .cta-section-bg-img {
@@ -1187,13 +1228,11 @@ footer ul li a:hover {
   .card {
     padding: 20px 20px 10px 20px;
   }
-  .industries-domains-img img {
-    height: 300px;
-  }
   .card .d-flex {
     flex-direction: column;
     gap: 10px;
   }
+
   .gym-cloud-content .pb-2 {
     padding: 0px;
   }
@@ -1222,10 +1261,10 @@ footer ul li a:hover {
 }
 @media only screen and (max-width: 285px) {
   .evolution-background-content {
-    height: 490px;
+    height: 500px;
   }
   .evolution {
-    height: 505px;
+    height: 515px;
   }
 }
 @media only screen and (max-width: 279px) {
