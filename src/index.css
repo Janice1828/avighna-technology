@@ -11,6 +11,8 @@
 }
 
 .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .mt-3 {
@@ -20,12 +22,18 @@
   margin-top: 40px;
 }
 .justify-content-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .align-items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .justify-content-center {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .w-100 {
@@ -49,7 +57,6 @@
   width: 167px;
 }
 .avighna-nav-logo img {
-  width: 100%;
   height: 60px;
 }
 .gap-1 {
@@ -91,6 +98,7 @@
 nav {
   padding: 10px 0px;
 }
+
 nav a {
   font-size: var(--font-size);
   font-weight: 500;
@@ -126,8 +134,15 @@ nav a {
 .evolution-background-content {
   background: var(--blue-color);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   border-radius: 35px;
   padding: 100px 0px;
@@ -135,6 +150,9 @@ nav a {
 }
 
 .flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .evolution-bg-img {
@@ -155,6 +173,8 @@ nav a {
 }
 .evolution-btns {
   gap: 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .learn-more-btn {
@@ -209,6 +229,8 @@ nav a {
 }
 .trusted-companies-logos {
   gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: flex-end;
 }
@@ -218,8 +240,13 @@ nav a {
   line-height: 76.8px;
   font-weight: 600;
   width: 554px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .evolution-text-blue {
@@ -254,7 +281,10 @@ nav a {
   width: 520px;
   font-size: 48px;
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-weight: 500;
   line-height: 57.6px;
@@ -273,6 +303,8 @@ nav a {
 }
 .avighna-technologies-ceo-signature {
   padding-top: 30px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 .d-block {
@@ -346,8 +378,13 @@ nav a {
   line-height: 57.6px;
   padding-top: 10px;
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .succeed-projects h3,
@@ -379,6 +416,7 @@ nav a {
 }
 .specification-lists {
   padding-top: 70px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   row-gap: 50px;
 }
@@ -399,6 +437,7 @@ nav a {
   font-size: 48px;
   font-weight: 500;
   width: 500px;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 10px 0px 60px 0px;
   line-height: 57.6px;
@@ -452,7 +491,6 @@ nav a {
 footer {
   background-color: var(--blue-color);
   background-image: url(./images/conny-schneider-xuTJZ7uD7PI-unsplash1.png);
-  /* height: 526px; */
   color: #fff;
   background-size: cover;
 }
@@ -488,8 +526,13 @@ footer a {
   padding: 10px 0px;
 }
 footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 #social-media-title {
@@ -512,13 +555,25 @@ footer ul {
   color: #686f76;
 }
 .headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   font-size: 48px;
   font-weight: 500;
   padding: 10px 0px 70px 0px;
   line-height: 57.6px;
+}
+.w-100-nav {
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  padding: 10px 0px;
+  margin: -11px 0px;
 }
 .sub-heading {
   font-size: 32px;
@@ -599,7 +654,10 @@ footer ul {
 .innvotive-intuitive h1 {
   font-size: 64px;
   line-height: 76.8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 490px;
 }
@@ -659,6 +717,7 @@ dialog {
 }
 .see-our-work-btn:hover {
   transform: scale(1.1);
+  transition: 0.4s;
 }
 .services-lists {
   line-height: 24px;
@@ -718,7 +777,6 @@ footer ul li a:hover {
 }
 #nav-toggle-btn {
   height: 20px;
-  /* width: 30px; */
   background: transparent;
   border: 0px;
   outline: none;
@@ -729,6 +787,8 @@ footer ul li a:hover {
 /* Responsive Design */
 @media only screen and (min-width: 1600px) {
   .business-building-experience {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
@@ -749,7 +809,12 @@ footer ul li a:hover {
     width: 50%;
   }
   .business-building-experience {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     padding: 100px 0px;
   }
@@ -783,8 +848,15 @@ footer ul li a:hover {
     height: 785px;
   }
   .trusted-clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
   }
@@ -795,6 +867,9 @@ footer ul li a:hover {
     text-align: center;
   }
   .digital-wallet-paymor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .trusted-companies-logos img {
@@ -807,6 +882,9 @@ footer ul li a:hover {
     width: 100%;
   }
   .paymor-case-study {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .cta-section-bg-img {
@@ -815,6 +893,7 @@ footer ul li a:hover {
 }
 @media only screen and (max-width: 850px) {
   nav {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 25px;
   }
@@ -836,10 +915,12 @@ footer ul li a:hover {
     text-align: center;
   }
   .company-details {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 30px;
   }
   .footer-links {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 20px;
   }
@@ -910,6 +991,8 @@ footer ul li a:hover {
     width: 80%;
   }
   .slider-lists {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   #trusted-companies-content {
@@ -943,7 +1026,11 @@ footer ul li a:hover {
   }
   .clients-logos-heading {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .trusted-clients h4 {
@@ -992,6 +1079,9 @@ footer ul li a:hover {
   .cta-section-bg-img {
     height: 400px;
   }
+  .selected {
+    transform: translateY(0px);
+  }
   .companies-logo {
     width: 90%;
   }
@@ -1029,7 +1119,12 @@ footer ul li a:hover {
     margin-top: 30px;
   }
   .customer-project-counter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
   #business-building-experience,
@@ -1068,13 +1163,21 @@ footer ul li a:hover {
     gap: 20px;
   }
   .customer-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   #business-building-content {
     padding-bottom: 20px;
   }
   .innovative-inituitive-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     gap: 20px;
   }
@@ -1083,7 +1186,9 @@ footer ul li a:hover {
   }
   #innvotive-intuitive-content {
     width: 90%;
-    /* text-align: center; */
+  }
+  .selected {
+    transform: translateY(0px);
   }
   .clients-logos-heading {
     width: 65%;
@@ -1117,25 +1222,53 @@ footer ul li a:hover {
 }
 @media only screen and (max-width: 400px) {
   .nav-links {
-    display: none;
+    height: 0px;
+    opacity: 0;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
   }
+
   .services-gap {
     gap: 20px;
   }
   .selected {
     padding-top: 3px;
   }
+  .contact-us-btn {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    z-index: -1;
+  }
   nav {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     align-items: flex-start !important;
   }
+  .avighna-nav-logo {
+    width: 100%;
+  }
   .nav-links-responsive {
+    height: auto;
+    opacity: 1;
+    width: auto;
+    transition: opacity 1s linear;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .nav-toggle {
-    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
   .toggle-btn {
@@ -1164,9 +1297,15 @@ footer ul li a:hover {
     width: 90%;
   }
   .avighna-technologies-ceo-signature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .evolution-btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
   }
@@ -1174,7 +1313,7 @@ footer ul li a:hover {
     margin: 30px 0px 30px 0px;
   }
   .evolution {
-    height: 510px;
+    height: 535px;
   }
   #web-development {
     right: 5px;
@@ -1192,7 +1331,7 @@ footer ul li a:hover {
   }
   .evolution-background-content {
     border-radius: 20px;
-    height: 495px;
+    height: 515px;
   }
   .evolution-background-content h1,
   .innvotive-intuitive h1 {
@@ -1211,16 +1350,24 @@ footer ul li a:hover {
     padding-bottom: 10px;
   }
 }
+@media only screen and (max-width: 325px) {
+  .case-study {
+    top: 7px;
+    left: -25px !important;
+  }
+}
 @media only screen and (max-width: 300px) {
   .cta-section-bg-img {
     height: 300px;
   }
+
   .digital-wallet {
     background-position: -274px -10px;
   }
   .case-study {
     position: relative;
     left: 0px !important;
+    top: 0px;
   }
   #trusted-companies-content {
     width: 165px;
@@ -1229,6 +1376,9 @@ footer ul li a:hover {
     padding: 20px 20px 10px 20px;
   }
   .card .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
   }

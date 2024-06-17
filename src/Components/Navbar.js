@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 import Menu from "../../src/images/menu.png";
 import CrossIcon from "../../src/images/close.png";
 const Navbar = () => {
+  const [navWidth, setNavWidth] = useState("nav-toggle");
   const toggleNav = () => {
     navDisplayToggle == "nav-links"
       ? setNavDisplayToggle("nav-links-responsive")
       : setNavDisplayToggle("nav-links");
     btnLogo == Menu ? setBtnLogo(CrossIcon) : setBtnLogo(Menu);
+    navWidth == "nav-toggle"
+      ? setNavWidth("w-100-nav")
+      : setNavWidth("nav-toggle");
   };
   const [navDisplayToggle, setNavDisplayToggle] = useState("nav-links");
   const [btnLogo, setBtnLogo] = useState(Menu);
@@ -17,7 +21,7 @@ const Navbar = () => {
       <div className="avighna-nav-logo">
         <img src={Logo} className="cursor-pointer" alt="Avighna Logo" />
       </div>
-      <div className="d-flex nav-toggle">
+      <div className={`d-flex ${navWidth}`}>
         <div className={`d-flex align-items-center gap-2 ${navDisplayToggle}`}>
           <Link to="#" className="text-decoration-none nav-link">
             Home
